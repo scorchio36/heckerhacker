@@ -1,0 +1,29 @@
+.sidemenu {
+  background-color: #F44;
+}
+
+.sidemenu a {
+
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sidemenu ul {
+
+  list-style: none;
+}
+
+.sidemenu li {
+
+  width: 250px;
+  background-color: #F88;
+  margin: 15px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.sidemenu li:hover {
+
+  background-color: #FAA;
+}
