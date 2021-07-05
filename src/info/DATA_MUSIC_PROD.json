@@ -1,0 +1,54 @@
+{
+  "terms":
+    {
+        "portamento": {
+            "word": "Portamento",
+            "definition": "Portamento is a type of lagato and it means sliding from one note to the next (kind of like a slide whistle). When using it on a synth, play a note normally first. When you play the next note, the pitches between the first note and the second note will be played, stopping at the second note. It is sort of a slide whistle effect.",
+            "links": []
+        },
+
+        "legato": {
+            "word": "Legato",
+            "definition": "In music performance and notation, legato indicates that musical notes are played or sung smoothly and connected.",
+            "links": [
+              {
+                "title": "Video with sound demonstration",
+                "link": "https://www.youtube.com/watch?v=JgJcKt92vt8&ab_channel=LearnPianoCompleteGuide"
+              },
+              {
+                "title": "Legato-Wikipedia",
+                "link": "https://en.wikipedia.org/wiki/Legato"
+              }
+            ]
+        },
+
+        "staccato" : {
+          "word": "Staccato",
+          "definition": "Staccato is a form of musical articulation. In modern notation, it signifies a note of shortened duration, separated from the note that may follow by silence.",
+          "links": [
+            {
+              "title": "Video with sound demonstration",
+              "link": "https://www.youtube.com/watch?v=JgJcKt92vt8&ab_channel=LearnPianoCompleteGuide"
+            },
+            {
+              "title": "Staccato-Wikipedia",
+              "link": "https://en.wikipedia.org/wiki/Staccato"
+            }
+          ]
+        },
+        "reverb" : {
+          "word": "Reverb",
+          "definition": "Ambient noise produced by the reflections of a sound source within an enclosed space.",
+          "links": [
+            {
+              "title": "Reverb Reference",
+              "link": "https://www.izotope.com/en/learn/reflecting-on-reverb-what-it-is-and-how-to-use-it.html"
+            },
+            {
+              "title": "Reverb vs Delay. When to use Each one.",
+              "link": "https://www.izotope.com/en/learn/when-to-use-reverb-and-delay.html"
+            }
+          ]
+        }
+    }
+}
