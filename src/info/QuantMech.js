@@ -1,7 +1,18 @@
 import React, {Component} from 'react';
+import Definition from './Definition';
+import getVocabSection from './VocabHelper';
+const DATA_QUANT_MECH = require('./DATA_QUANT_MECH.json');
 
 class QuantMech extends Component {
 
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      definitionComponents: getVocabSection(DATA_QUANT_MECH)
+    }
+  }
   render() {
 
     return (
@@ -10,44 +21,11 @@ class QuantMech extends Component {
         <h1>Resources/Notes for QuantMech</h1>
         <div>
           <h2>Vocab</h2>
-          <div>
-            <h3>Wave Function</h3>
-            <p>
-              A function that is defined such that the non-infinite integral of the square of the function represents the probability density of locating a particle
-              at a particular point in space.
-            </p>
-          </div>
-          <div>
-            <h3>Wave Function</h3>
-            <p>
-              A function that is defined such that the non-infinite integral of the square of the function represents the probability density of locating a particle
-              at a particular point in space.
-            </p>
-          </div>
-          <div>
-            <h3>Wave Function</h3>
-            <p>
-              A function that is defined such that the non-infinite integral of the square of the function represents the probability density of locating a particle
-              at a particular point in space.
-            </p>
-          </div>
-          <div>
-            <h3>Wave Function</h3>
-            <p>
-              A function that is defined such that the non-infinite integral of the square of the function represents the probability density of locating a particle
-              at a particular point in space.
-            </p>
-          </div>
-          <div>
-            <h3>Wave Function</h3>
-            <p>
-              A function that is defined such that the non-infinite integral of the square of the function represents the probability density of locating a particle
-              at a particular point in space.
-            </p>
-          </div>
+          <ul>
+            {this.state.definitionComponents}
+          </ul>
         </div>
       </div>
-
     );
   }
 }

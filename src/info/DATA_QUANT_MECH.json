@@ -1,0 +1,30 @@
+{
+  "terms":
+    {
+        "wavefunction": {
+            "word": "Wave Function",
+            "definition": "A function that is defined such that the non-infinite integral of the square of the function represents the probability density of locating a particle at a particular point in space.",
+            "links": [
+              {
+                "title": "QuantumPhysicsLady: Wave Function Explained",
+                "link": "http://www.quantumphysicslady.org/glossary/wave-function/"
+              }
+            ]
+        },
+
+        "virtualparticle": {
+            "word": "Virtual Particle",
+            "definition": "an elementary particle of transitory existence that does not appear as a free particle in a particular situation but that can transmit a force from one particle to another.",
+            "links": [
+              {
+                "title": "Forum: Learn the Physics of Virtual Particles in Quantum Mechanics",
+                "link": "https://www.physicsforums.com/insights/physics-virtual-particles/"
+              },
+              {
+                "title": "Youtube: The Nature of Nothing - PBS SpaceTime",
+                "link": "https://www.youtube.com/watch?v=X5rAGfjPSWE&ab_channel=PBSSpaceTime"
+              }
+            ]
+        }
+    }
+}

@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Definition from './Definition';
+import getVocabSection from './VocabHelper';
 const DATA_MUSIC_PROD = require('./DATA_MUSIC_PROD.json');
+
 
 class MusicProd extends Component {
 
@@ -8,12 +10,9 @@ class MusicProd extends Component {
     super(props);
 
     this.state = {
-      definitionComponents: []
+      definitionComponents: getVocabSection(DATA_MUSIC_PROD)
     };
 
-    this.renderDefinitions = this.renderDefinitions.bind(this);
-
-    this.renderDefinitions();
 
   }
 
@@ -32,18 +31,6 @@ class MusicProd extends Component {
       </div>
 
     );
-  }
-
-  renderDefinitions() {
-
-    let tempObj = DATA_MUSIC_PROD.terms;
-    for(const dataTerm in tempObj) {
-      this.setState({
-        definitionComponents: this.state.definitionComponents.push(
-          <Definition term={tempObj[dataTerm].word} definition={tempObj[dataTerm].definition} links={tempObj[dataTerm].links} key={tempObj[dataTerm].word}/>
-        )
-      });
-    }
   }
 
 
