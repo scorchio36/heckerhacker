@@ -6,11 +6,11 @@ class SideMenu extends Component {
 
   render() {
     return (
-      <div className="sidemenu">
+      <div className="sidemenu" style={{left: this.props.menuOffset}}>
         <ul>
-          <NavLink to="/music_production"><li>Electronic Music Production</li></NavLink>
-          <NavLink to="/quantum_mechanics"><li>Quantum Mechanics</li></NavLink>
-          <NavLink to="/javascript"><li>Javascript</li></NavLink>
+          <NavLink to="/music_production" onClick={this.props.hamburgercallback}><li>Electronic Music Production</li></NavLink>
+          <NavLink to="/quantum_mechanics" onClick={this.props.hamburgercallback}><li>Quantum Mechanics</li></NavLink>
+          <NavLink to="/javascript" onClick={this.props.hamburgercallback}><li>Javascript</li></NavLink>
         </ul>
       </div>
     );

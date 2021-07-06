@@ -1,0 +1,25 @@
+#header {
+    padding: 10px;
+    background-color: #4F4;
+    display: block;
+}
+
+#header a {
+  text-decoration: none;
+}
+
+#hamburger-menu {
+
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+
+  #hamburger-menu {
+
+    display: inline;
+    visibility: visible;
+  }
+
+}

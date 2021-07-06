@@ -11,12 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-#header {
-    padding: 10px;
-    background-color: #4F4;
-}
-
-#header a {
-  text-decoration: none;
-}
