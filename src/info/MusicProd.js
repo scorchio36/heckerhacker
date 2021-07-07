@@ -29,10 +29,52 @@ class MusicProd extends Component {
       <div>
         <h1>Resources/Notes for Music Production</h1> <hr/>
         <div>
-          <h2>Vocab</h2>
-          <ul>
-            {this.state.definitionComponents}
-          </ul><hr/>
+          <div>
+            <h2>Vocab</h2>
+            <ul>
+              {this.state.definitionComponents}
+            </ul><hr/>
+          </div>
+          <div>
+            <h2>Notes</h2>
+            <ul>
+              <li>
+                <h3>Sidechaining: LFO v.s. Compressor</h3>
+                <ul>
+                  <li>In many instances, you can use an LFO/LFO tool for sidechaining or pumping effects. Deadmau5 actually recommends using an LFO in most cases.</li>
+                  <li>Your goal for pumping or sidechaining is to attenuate the sidechained signal right where the kick hits its greatest peak (You want that kick or snare to cut through as effectively as possible).</li>
+                  <li>Electronic drums are (almost always) sampled. Therefore, you will be playing the same sound over and over again throughout the song. If that's the case, you know the drum peak will be in the same spot every time, since the sample and its peaks do not change. So you can use a predictable LFO and adjust it so you get perfect pumping everytime.</li>
+                  <li>Now when would you use a compressor for sidechaining/pumping? When you are using real drums or recording instruments.</li>
+                  <li>Analog kicks or snares have different harmonics and overtones. Their highest peaks will vary on every different stroke. You won't ever be able to hit that drum exactly the same way twice. Since the peak will vary every time, you will want to use a peak detection compressor to effectively find the highest peak everytime and sidechain the signal at that exact point.</li>
+                  <li>You wouldn't be able to do that with an LFO because the LFO will duck the instrument out at the same spot every time. Whereas an analog drum kick might peak at different times and therefore won't cut through as well.</li>
+                </ul>
+              </li>
+              <li>
+                <h3>VST Plugins that I Like to Use</h3>
+                <ul>
+                  <li><a href="https://www.voxengo.com/product/span/">SPAN - Spectrum Analyzer</a></li>
+                  <li><a href="https://www.audiodamage.com/pages/free-downloads">Rough Rider Compressor</a></li>
+                  <li><a href="https://www.tbproaudio.de/download">VUMeter - TBProAudio</a></li>
+                  <li><a href="https://tytel.org/helm/">Helm - Matt Tytel</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3>Metering</h3>
+                <ul>
+                  <li>Metering is a very important part of mixing. This just refers to the measurement of the "loudness" or energy of signals in your mix. There are many types of metering systems and different units that you can use. The main ones that I've come across are:</li>
+                  <li>dBFS - Stands for Decibels at Full Scale. In this system, 0dBFS is a reference point referring to the high amplitude that a system can produce. Above this amplitude, your signal will be clipped. This is just a specialized dB system with a reference. Much like dBm or dBw. The main units here are still dB. This is most useful as a tool to measure the height of your peaks. Before sending your track off to master, leave some headroom. Your peaks shouldn't exceed -6dB.</li>
+                  <li>K-metering - System invented by Dan Katz. Uses a scale that adjusts different parts of the spectrum to accounts for varying frequencies having more energy than others. The number at the end of the K refers to the dB reference point of the scale. This is more useful as a measure of the total energy or loudness of your track.</li>
+                  <li>LUFS - Stands for Loudness Units at Full Scale. Based on a standard developed by some European standards committee, known as LKFS. Eventually, became what is known as LUFS today. LUFS is a measure of the "loudness" of a track as well. It is a standard followed by most broadcasting and music companies today. I reccommend using this one when measuring the loudness of your track. Before sending your track off to master, leave some headroom. Your overall integrated loudness should be somewhere between -23dB and -18dB. LUFS first takes a certain length of sound and then gives you a value. There are different LUFS scales that sample the sounds for a different amount of time. For example, the LUFS-ML system samples 0.4 seconds of sound and then gives you a value in dB. LUFS-SL will take 3 seconds of sound. Integrated LUFS refers to the average loudness of your entire track. So after your entire track has been sampled by the meter, you will get a final LUFS value. That integrated value is the one that should be between -23dB and -18dB.</li>
+                  <li>RMS - Stands for Root Mean Square. With root mean square, you sample your waveform, square each sample, add them all together, divide that sum by the number of samples, then take the square root of that. Essentially, RMS is the square root of the average of the squares of your waveform. This is done because waveforms are oscillatory. If you try and average a waveform without squaring it, the positive and negative portions of the waveform will mathematically cancel each other out and give you a crappy idea of the actual energy/loudness content of the sound. RMS is also a good way to quickly get an idea of the loudness of your track. It is inferior to something like K-metering or LUFS, however, as RMS doesn't properly account for the variation in power that occurs as you go up and down the spectrum.</li>
+                  <li><a href="https://www.youtube.com/watch?v=jeBjyHm5LKc&ab_channel=AudioProductionTips">Digital Metering 101 - dBFS, RMS, LUFS and more</a></li>
+                  <li><a href="https://www.soundonsound.com/forum/viewtopic.php?f=16&t=60269">Interesting Thread on Peak-Normalization vs Loudness-Normalization</a></li>
+                  <li><a href="https://www.whippedcreamsounds.com/how-loud-should-my-mix-be/">How LOUD should my mix be?</a></li>
+                  <li><a href="https://www.meterplugs.com/blog/2016/10/14/k-system-metering-101.html">K-Metering System 101</a></li>
+                  <li><a href="https://unlockyoursound.com/spotify-lufs/">Interesting Article on Spotify LUFS and what LUFS level to release your song at</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 

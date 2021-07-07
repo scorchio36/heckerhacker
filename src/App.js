@@ -54,8 +54,6 @@ class App extends Component {
   // updates state in order to reveal or hide sidemenu on mobile devices
   toggleMenuVisibility() {
 
-    console.log("CLICK!");
-
     if(this.state.menuVisible) {
       this.setState({
         menuVisible: false,

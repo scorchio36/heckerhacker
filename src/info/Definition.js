@@ -51,7 +51,6 @@ class Definition extends Component {
     );
   }
 
-
   // decides whether the additional links should be showing or not (user clicks on yellow arrow to see links)
   toggleDetailsVisibility() {
 
