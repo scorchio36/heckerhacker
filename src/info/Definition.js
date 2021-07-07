@@ -38,7 +38,7 @@ class Definition extends Component {
                   this.props.links.map(links=> {
                     return (
                       <div>
-                        <li key={links.link}><a href={links.link}>{links.title}</a></li>
+                        <li key={links.link}><a href={links.link} target="_blank" rel="noopener noreferrer">{links.title}</a></li>
                       </div>
                     );
                   })

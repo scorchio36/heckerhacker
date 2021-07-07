@@ -1,13 +1,22 @@
 {
   "terms":
     {
-        "portamento": {
-            "word": "Portamento",
-            "definition": "Portamento is a type of lagato and it means sliding from one note to the next (kind of like a slide whistle). When using it on a synth, play a note normally first. When you play the next note, the pitches between the first note and the second note will be played, stopping at the second note. It is sort of a slide whistle effect.",
-            "links": []
-        },
+      "ducking": {
+          "word": "Ducking",
+          "definition": "When you duck a sound out of your music, you soften or completely zero the amplitude of that sound for a certain period of time. This is typically done to allow for another sound to cut through your mix. A good example of this is the kick and bass within a mix. A kick is a short burst of sound that typically has a lot of energy in the lower part of the spectrum (sub-bass, bass, low-mids). Let's imagine that we have a sustained bass note throughout the mix, which also has a lot of energy in the sub-bass and bass portions of the spectrum. The frequency content of the kick and the bass will clearly overlap and mess with each other. This can cause clarity and phase problems as the two sounds constructively and destructively intefere. You will have a lot of issues hearing your kick through the bass and the track will sound muddy. A good fix for this is to 'duck' out the bass everytime the kick hits. This will allow your kick to cut through the bass and make it much easier to hear. You can duck out the bass in a subtle way - just enough for that kick to cut through. Or you can duck out the bass by a lot and introduce a pumping effect into your mix. The example given is typically done through side chaining, but can also be done with an LFO. See 'sidechaining' in the vocab section and LFO vs Compressors in the notes section.",
+          "links": [
+            {
+              "title": "What is SideChaining (Introduces the term Ducking)",
+              "link": "https://ledgernote.com/columns/mixing-mastering/what-is-sidechaining/"
+            },
+            {
+              "title": "LMMS Forum: Using a Peak Controller for Ducking/Sidechaining",
+              "link": "https://lmms.io/forum/viewtopic.php?t=1181"
+            }
+          ]
+      },
 
-        "legato": {
+      "legato": {
             "word": "Legato",
             "definition": "In music performance and notation, legato indicates that musical notes are played or sung smoothly and connected.",
             "links": [
@@ -22,6 +31,37 @@
             ]
         },
 
+        "pad": {
+              "word": "Pad or Pad Synth",
+              "definition": "A sustained sound that is used to add thickness and atmosphere to a mix or composition. The sound is typically made up of stacked instruments or synths. Additionally, a unison effect can be used to widen the frequency spread of the sound, so the sound has more of an impact. The idea is to fill up the room with, what I would call, 'warmth'. You want the pad to fill in all the open space in a mix or composition, so you get a more full effect.",
+              "links": [
+                {
+                  "title": "Why is a Synth Pad called a Pad?",
+                  "link": "https://musicianshq.com/why-is-a-synth-pad-called-a-pad"
+                }
+              ]
+          },
+
+        "portamento": {
+            "word": "Portamento",
+            "definition": "Portamento is a type of lagato and it means sliding from one note to the next (kind of like a slide whistle). When using it on a synth, play a note normally first. When you play the next note, the pitches between the first note and the second note will be played, stopping at the second note. It is sort of a slide whistle effect.",
+            "links": []
+        },
+
+        "reverb" : {
+          "word": "Reverb",
+          "definition": "Ambient noise produced by the reflections of a sound source within an enclosed space.",
+          "links": [
+            {
+              "title": "Reverb Reference",
+              "link": "https://www.izotope.com/en/learn/reflecting-on-reverb-what-it-is-and-how-to-use-it.html"
+            },
+            {
+              "title": "Reverb vs Delay. When to use Each one.",
+              "link": "https://www.izotope.com/en/learn/when-to-use-reverb-and-delay.html"
+            }
+          ]
+        },
         "staccato" : {
           "word": "Staccato",
           "definition": "Staccato is a form of musical articulation. In modern notation, it signifies a note of shortened duration, separated from the note that may follow by silence.",
@@ -36,17 +76,35 @@
             }
           ]
         },
-        "reverb" : {
-          "word": "Reverb",
-          "definition": "Ambient noise produced by the reflections of a sound source within an enclosed space.",
+        "synthesis" : {
+          "word": "Synthesis",
+          "definition": "The creation of different sounds, typically through the use of a synthesizer. There are different kinds of synthesis, like additive synthesis, in which a unique sound is created by adding together modulated waveforms from different sources/oscillators.\n\nSynthesizers vary, but many of them include a set of standard tools that you can use for synthesis: LFOs, ADSR/Transient ramp modulators, AM, FM, PM, & Ring modulators, and oscillators (sine, square, sawtooth, triangle, etc...). These tools give you a lot of flexibility to manipulate every aspect of a waveform and its corresponding sound.",
           "links": [
             {
-              "title": "Reverb Reference",
-              "link": "https://www.izotope.com/en/learn/reflecting-on-reverb-what-it-is-and-how-to-use-it.html"
+              "title": "Learning Synthesis (In-depth tutorial on PerfectCircuit.com)",
+              "link": "https://www.perfectcircuit.com/signal/learn-synthesis"
+            }
+          ]
+        },
+        "zynaddsubfx" : {
+          "word": "ZynAddSubFX",
+          "definition": "A very versatile synth that comes pre-installed with LMMS. It has workflows for additive, subtractive, and PAD synthesis. Please note that I am referring to the older version of this tool. There is a newer, premium version called Zyn-Fusion.",
+          "links": [
+            {
+              "title": "ZynAddSubFX Manual/Wiki Site",
+              "link": "https://wiki.linuxaudio.org/wiki/zynaddsubfx_manual"
             },
             {
-              "title": "Reverb vs Delay. When to use Each one.",
-              "link": "https://www.izotope.com/en/learn/when-to-use-reverb-and-delay.html"
+              "title": "LMMS ZynAddSubFX Video Tutorials (Section 7.3.5.3)",
+              "link": "https://docs.lmms.io/user-manual/7-resources/7.3-video-tutorials"
+            },
+            {
+              "title": "ZynAddSubFX Oscillator API",
+              "link": "https://zynaddsubfx.sourceforge.io/zyn-ports/#"
+            },
+            {
+              "title": "ZynAddSubFX Info Document",
+              "link": "http://lac.zkm.de/2005/papers/nasca_octavian_paul.pdf"
             }
           ]
         }

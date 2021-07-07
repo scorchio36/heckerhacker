@@ -35,11 +35,11 @@ class App extends Component {
   render() {
     return (
       <div>
-        <HashRouter> // allows for SPA functionality
+        <HashRouter>
           <Header hamburgercallback={this.toggleMenuVisibility}/>
           <div className="main-content">
             <SideMenu menuOffset={this.state.menuOffset} hamburgercallback={this.toggleMenuVisibility}/>
-            <div className="content"> // The content that changes when sidemenu links are clicked
+            <div className="content">
               <Route exact path="/" component={ Home } />
               <Route path="/music_production" component={ MusicProd } />
               <Route path="/quantum_mechanics" component={ QuantMech } />
