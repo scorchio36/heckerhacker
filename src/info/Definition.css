@@ -6,6 +6,7 @@ li {
   margin: 12px;
 }
 
+/* This will be the yellow arrow button the user clicks to view the hidden links list */
 button {
 
   background-color: #EE0;
@@ -21,6 +22,7 @@ button:hover {
   cursor: pointer;
 }
 
+/* make the clickable button larger on smaller screens so it's easier to click on */
 @media screen and (max-width: 600px) {
 
   button {

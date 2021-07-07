@@ -12,9 +12,10 @@ class Definition extends Component {
   constructor(props) {
     super(props);
 
+    // state will keep track for whether additional links section will be visible
     this.state = {
       isVisible: false,
-      style: { visibility: "hidden", display: "none" }
+      style: { visibility: "hidden", display: "none" } // initially invisible
     };
 
     this.toggleDetailsVisibility = this.toggleDetailsVisibility.bind(this);
@@ -32,6 +33,8 @@ class Definition extends Component {
             <div className="relevant_links" style={this.state.style}>
               <ul>
                 {
+                  // Create a list of anchor elements from the array of links that was passed in as a prop.
+                  // These links are extracted from the DATA_FILE in the parent component.
                   this.props.links.map(links=> {
                     return (
                       <div>
@@ -49,6 +52,7 @@ class Definition extends Component {
   }
 
 
+  // decides whether the additional links should be showing or not (user clicks on yellow arrow to see links)
   toggleDetailsVisibility() {
 
     if(this.state.isVisible) {

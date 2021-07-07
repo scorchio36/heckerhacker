@@ -1,5 +1,7 @@
 .sidemenu {
   background-color: #F44;
+  flex: 1;
+  border-bottom-right-radius: 20px;
 }
 
 .sidemenu a {
@@ -28,10 +30,14 @@
   background-color: #FAA;
 }
 
+/* Sidemenu will not initially be visible on mobile. Hamburger icon will need to
+be clicked in order to reveal the menu. This is done with absolute positioning. A
+transition is used to make the sidemenu pop in and out smoothly. */
 @media screen and (max-width: 600px) {
 
   .sidemenu {
     position: absolute;
     left: -290px;
+    transition: left 0.75s;
   }
 }

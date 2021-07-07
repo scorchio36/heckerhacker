@@ -2,6 +2,12 @@ import React, {Component} from 'react';
 import './SideMenu.css';
 import {NavLink} from 'react-router-dom';
 
+/* This is a navigation menu to go to different pages in the website.
+
+onClick hamburgercallback is used to close the menu whenever one of the
+menu links is clicked. This is just for convenience. This function is passed
+in as a prop by App component. */
+
 class SideMenu extends Component {
 
   render() {

@@ -2,24 +2,33 @@
     padding: 10px;
     background-color: #4F4;
     display: block;
+    border-bottom: 1px solid #474;
 }
 
 #header a {
   text-decoration: none;
 }
 
+.header-logo {
+  width: 100px;
+}
+
+/* Only display icon on mobile */
 #hamburger-menu {
 
   display: none;
   visibility: hidden;
 }
 
+/* Only display the hamburger-menu icon on mobile devices. The sidemenu will always
+be there for desktop devices, but you need to click on hamburger-menu icon to open
+sidemenu/nav on mobile. */
 @media screen and (max-width: 600px) {
 
   #hamburger-menu {
 
     display: inline;
     visibility: visible;
+    height: inherit;
   }
-
 }
