@@ -1,6 +1,24 @@
 {
   "terms":
     {
+      "compressor": {
+          "word": "Compressor",
+          "definition": "Compressors are tools that control the dynamics of a sound or mix. The main reason you use them is to squash down transients so you have more control over your audio levels. Sounds can be unruly and inconsistent. For a lot of audio sources, like vocals, there is a large disparity between the loudest and quietest sounds that a singer produces (the difference in dB between the loudest and quietest levels in a mix is called the Dynamic Range). This can lead to an inconsistent feeling from a mix or sound. It also causes a problem of balancing. The quiet sounds may be too hard to hear, but turning up the whole track can make your loudest sounds clip. The compressor is a good tool for this. It has two main controls that can be adjusted: the threshold and the ratio. The threshold is set at a certain dB level. If any portion of a sound goes above this dB level, then the compressor will kick in and attenuate the portion of the sound that exceeds the threshold. But how do you control how much the sound gets attenuated? Through the ratio parameter. The ratio is an X:1 ratio where X determines how many decibels of attenuation a signal experiences per dB of signal that crosses the threshold. For example, if my ratio is 4:1 and my threshold is -14dB, every 4dB that crosses the -14dB threshold is squashed down to 1dB. If I have a -10dB signal pumping through this compressor, it will be squashed down to -13dB. A -6dB signal would be attenuated to -12dB. There are two other parameters that are worth mentioning. The attack and release levels. These are set in milliseconds. They are used to tell the compressor how much time it should wait before kicking in or cutting out. When a signal crosses the threshold parameter, the attack is the amount of time the compressor should wait before it starts attenuating the signal. When a signal drops back below the threshold level, the release is the amount of time the compressor should keep attenuating the signal before it shuts off again. Compressors are used for dynamic control, but they are also appreciated for the tonal value that they can add to a sound. Each compressor has an intrinsic effect that it applies to a sound through signal processing. Most processors/VSTs do. The effect is different for every compressor. But you can also affec the tone of an incoming signal by adjusting any of the 4 parameters mentioned earlier. The compressors main goal is not to change the tonal value of your signal, so these sound changes are subtle. They can change the punch of a sound, make a sound more thick or thin. They can be applied to a whole mix and 'glue' it together.",
+          "links": [
+            {
+              "title": "Wikiemedia - Dynamics Playlist (Youtube)",
+              "link": "https://www.youtube.com/watch?v=NVxbx3ixLYA&list=PLB116FE339C48F0A1&ab_channel=wickiemedia"
+            },
+            {
+              "title": "Are You Listening? Season 1 with Johnathan Wyner - Compression in Mastering (Youtube)",
+              "link": "https://www.youtube.com/watch?v=IyjlRiNiLBg&t=786s&ab_channel=iZotope%2CInc."
+            },
+            {
+              "title": "Musician on a Mission - Compressors",
+              "link": "https://www.musicianonamission.com/curation/subtax_compression/"
+            }
+          ]
+      },
       "ducking": {
           "word": "Ducking",
           "definition": "When you duck a sound out of your music, you soften or completely zero the amplitude of that sound for a certain period of time. This is typically done to allow for another sound to cut through your mix. A good example of this is the kick and bass within a mix. A kick is a short burst of sound that typically has a lot of energy in the lower part of the spectrum (sub-bass, bass, low-mids). Let's imagine that we have a sustained bass note throughout the mix, which also has a lot of energy in the sub-bass and bass portions of the spectrum. The frequency content of the kick and the bass will clearly overlap and mess with each other. This can cause clarity and phase problems as the two sounds constructively and destructively intefere. You will have a lot of issues hearing your kick through the bass and the track will sound muddy. A good fix for this is to 'duck' out the bass everytime the kick hits. This will allow your kick to cut through the bass and make it much easier to hear. You can duck out the bass in a subtle way - just enough for that kick to cut through. Or you can duck out the bass by a lot and introduce a pumping effect into your mix. The example given is typically done through side chaining, but can also be done with an LFO. See 'sidechaining' in the vocab section and LFO vs Compressors in the notes section.",

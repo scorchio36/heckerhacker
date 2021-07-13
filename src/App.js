@@ -12,6 +12,7 @@ import MusicProd from './info/MusicProd';
 import SideMenu from './SideMenu';
 import QuantMech from './info/QuantMech';
 import Javascript from './info/Javascript';
+import CentrifugalPumps from './info/CentrifugalPumps';
 import Home from './Home';
 const SIDEMENU_OFFSCREEN_OFFSET = "-290px"; // How many pixels until the sidemenu is completely off-screen (may need to be adjusted for different devices)
 
@@ -44,6 +45,7 @@ class App extends Component {
               <Route path="/music_production" component={ MusicProd } />
               <Route path="/quantum_mechanics" component={ QuantMech } />
               <Route path="/javascript" component={ Javascript } />
+              <Route path="/centrifugal_pumps" component={ CentrifugalPumps } />
             </div>
           </div>
         </HashRouter>
