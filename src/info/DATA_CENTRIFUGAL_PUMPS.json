@@ -1,6 +1,20 @@
 {
   "terms":
     {
+      "cavitation": {
+          "word": "Cavitation",
+          "definition": "Impellers can introduce areas of very low pressure. This can happen at the eye of the impeller or even on the impeller blades. If the pressure in these areas is low enough, such that the pressure is less than the vapor pressure of the liquid being pumped, then the fluid will boil. As the bubbles travel throughout the pump they can pop and actually cause damage to the internal parts of the pump.",
+          "links": [
+            {
+              "title": "Why is Cavitation Damaging your Pumps?",
+              "link": "https://www.sintechpumps.com/pump-maintenance/why-is-cavitation-damaging-to-your-pump/"
+            },
+            {
+              "title": "What is Cavitation and How Does it Work? (Youtube)",
+              "link": "https://www.youtube.com/watch?v=ey0S66hDq9U&ab_channel=ConcerningReality"
+            }
+          ]
+      },
       "channel": {
           "word": "Channel",
           "definition": "Spacing between the vanes of the impeller. The length of the channel can open and increase radially. This increasing spacing increases pressure according to bernoulli's law.",

@@ -56,6 +56,8 @@ class MusicProd extends Component {
                   <li><a href="https://www.audiodamage.com/pages/free-downloads">Rough Rider Compressor</a></li>
                   <li><a href="https://www.tbproaudio.de/download">VUMeter - TBProAudio</a></li>
                   <li><a href="https://tytel.org/helm/">Helm - Matt Tytel</a></li>
+                  <li><a href="https://www.meldaproduction.com/">MeldaProductions Suite of Tools</a></li>
+                  <li><a href="http://bram.smartelectronix.com/plugins.php?id=4">s(M)exoscope by SmartElectronix</a></li>
                 </ul>
               </li>
               <li>
@@ -73,6 +75,25 @@ class MusicProd extends Component {
                   <li><a href="https://unlockyoursound.com/spotify-lufs/">Interesting Article on Spotify LUFS and what LUFS level to release your song at</a></li>
                 </ul>
               </li>
+
+              <li>
+                <h3>Mixing</h3>
+                <ul>
+                  <li>
+                    Equalization is an important part of mixing. You can use it to cut out bad sounds, bring out good sounds, or change the sound of an instrument. See 'equalizers' in the definitions section for more details. However, the most important thing an EQ can do during mixing, is create space for everything. You only have about 20kHz of bandwidth for your entire song. It's really even less than this, since human hearing starts dropping off as we get older and higher frequencies kind of start meshing together between 15k-20k. You should allocate certain portions of the spectrum to certain instruments and cut out those allocated sections out of other instruments within the song. For example, let's say you have a low-end kick who's energy sits between 60Hz and 350Hz. Then let's say you have a trumpet sample that has strong energy between 150Hz and 8kHz. You probably want to give that kick it's space by cutting out the portion of the trumpet sound that overlaps with the kick's frequency content. You also want to give your important instruments or tracks the space they deserve. That way they get the most attention. This is a must for your vocals, for example. If I have a primary vocal who's fundamental is sitting around 400-600Hz then I should make cuts, even small ones, in all other instruments at 400-600Hz. That way the vocal isn't competing for that portion of the frequency spectrum.
+                  </li>
+                  <li>
+                    Compression is another must when it comes to mixing. It is used to control your dynamics and change the feel or thickness of your tracks.
+                  </li>
+                  <li>
+                    Reverb and Delay can bring a more authentic feeling to your mix. 
+                  </li>
+                  <li>
+                    Make sure you leave headroom in your final mix for mastering. Standard is to not let your peaks exceed -6dBFS. I have found it may be easier to mix at a lower level than this though. You can mix between -18dBFS to -12dBFS with confidence that you won't ever break that -6dBFS ceiling. When you're happy with your mix, if you aren't peaking at -6dBFS you can just move all of your tracks up until you are peaking there.
+                  </li>
+                </ul>
+              </li>
+
             </ul>
           </div>
         </div>

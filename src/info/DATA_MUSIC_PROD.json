@@ -1,6 +1,16 @@
 {
   "terms":
     {
+      "adsr": {
+          "word": "ADSR Envelope",
+          "definition": "ADSR stands for Attack, Delay, Sustain, and Release. This refers to parts of an envelope signal that you can customize. This envelope is then used to modulate a parameter of another signal. Typically you use it to modulate the amplitude of a signal or the cutoff frequency of a filter. But most DAWs should really allow you to modulate any parameter that you want with the envelope. The names Attack, Delay, Sustain, and Release refer to sections of this envelope and you can adjust each section to change how the parameter you are modulating is modulated. The envelope amplitude begins at zero and rises up to an initial peak. The time is take for the envelope to rise from 0 and hit this peak is called the attack. The envelope amplitude then immediately falls from this peak and down to a sustain level. The delay is how long it takes the envelope to fall from the envelope peak to the sustain amplitude. You can adjust the sustain to be at whatever amplitude you would like. Finally, the release is how long it takes the envelope to fall from the sustain back to 0. Depending on the envelope, there could be additional sections like pre-delay (time between t=0 and the start of the attack section) or hold (how long to hold the peak of the envelope). You can use this envelope to create cool effects if you're modulating amplitude. You could create a strumming or string effect out of a sustained instrument by having a very quick delay that falls down to a near-zero sustain level. You could create a peakless, wah sound that sounds like a note played in reverse, if you lengthen the attack time. You can use envelopes many creative ways. That is just brushing the surface.",
+          "links": [
+            {
+              "title": "ADSR Envelopes",
+              "link": "https://www.wikiaudio.org/adsr-envelope/"
+            }
+          ]
+      },
       "compressor": {
           "word": "Compressor",
           "definition": "Compressors are tools that control the dynamics of a sound or mix. The main reason you use them is to squash down transients so you have more control over your audio levels. Sounds can be unruly and inconsistent. For a lot of audio sources, like vocals, there is a large disparity between the loudest and quietest sounds that a singer produces (the difference in dB between the loudest and quietest levels in a mix is called the Dynamic Range). This can lead to an inconsistent feeling from a mix or sound. It also causes a problem of balancing. The quiet sounds may be too hard to hear, but turning up the whole track can make your loudest sounds clip. The compressor is a good tool for this. It has two main controls that can be adjusted: the threshold and the ratio. The threshold is set at a certain dB level. If any portion of a sound goes above this dB level, then the compressor will kick in and attenuate the portion of the sound that exceeds the threshold. But how do you control how much the sound gets attenuated? Through the ratio parameter. The ratio is an X:1 ratio where X determines how many decibels of attenuation a signal experiences per dB of signal that crosses the threshold. For example, if my ratio is 4:1 and my threshold is -14dB, every 4dB that crosses the -14dB threshold is squashed down to 1dB. If I have a -10dB signal pumping through this compressor, it will be squashed down to -13dB. A -6dB signal would be attenuated to -12dB. There are two other parameters that are worth mentioning. The attack and release levels. These are set in milliseconds. They are used to tell the compressor how much time it should wait before kicking in or cutting out. When a signal crosses the threshold parameter, the attack is the amount of time the compressor should wait before it starts attenuating the signal. When a signal drops back below the threshold level, the release is the amount of time the compressor should keep attenuating the signal before it shuts off again. Compressors are used for dynamic control, but they are also appreciated for the tonal value that they can add to a sound. Each compressor has an intrinsic effect that it applies to a sound through signal processing. Most processors/VSTs do. The effect is different for every compressor. But you can also affec the tone of an incoming signal by adjusting any of the 4 parameters mentioned earlier. The compressors main goal is not to change the tonal value of your signal, so these sound changes are subtle. They can change the punch of a sound, make a sound more thick or thin. They can be applied to a whole mix and 'glue' it together.",
@@ -19,6 +29,20 @@
             }
           ]
       },
+      "digitalsweetspot": {
+          "word": "Digital Sweet Spot",
+          "definition": "Digital VST instruments and plugins today are generally modeled after analog instrumentation from the 'olden days' of music. There was typically a spot, at 0VU, that was known as the analog sweet spot. That is where you wanted your signals to be for processing so they would sound best. This is still the case for digital instruments, since most of them are modeled after the analog ones. Processing is most effective if you have your signal levels at 0VU, which is around -18dbFS. Getting your input sounds into this digital sweet spot before processing usually falls under the concept of 'gain staging'. You can use a VU meter and change the gain of the loudest part of a track until it, on average, hovers around 0VU. This is easier for sustained notes. For more dynamic notes, you should be more concerned with the peak. Get as close as you can to 0VU without compromising the amount of headroom you want to ultimately leave in your track.",
+          "links": [
+            {
+              "title": "The Digital Audio Sweet Spot (RecordingRevolution)",
+              "link": "https://www.youtube.com/watch?v=1hxMidhTLa8&ab_channel=recordingrevolution"
+            },
+            {
+              "title": "A Complete Guide to Gain Staging (your questions answered)",
+              "link": "https://www.youtube.com/watch?v=Tq5lDHCKt84&ab_channel=MusicianonaMission"
+            }
+          ]
+      },
       "ducking": {
           "word": "Ducking",
           "definition": "When you duck a sound out of your music, you soften or completely zero the amplitude of that sound for a certain period of time. This is typically done to allow for another sound to cut through your mix. A good example of this is the kick and bass within a mix. A kick is a short burst of sound that typically has a lot of energy in the lower part of the spectrum (sub-bass, bass, low-mids). Let's imagine that we have a sustained bass note throughout the mix, which also has a lot of energy in the sub-bass and bass portions of the spectrum. The frequency content of the kick and the bass will clearly overlap and mess with each other. This can cause clarity and phase problems as the two sounds constructively and destructively intefere. You will have a lot of issues hearing your kick through the bass and the track will sound muddy. A good fix for this is to 'duck' out the bass everytime the kick hits. This will allow your kick to cut through the bass and make it much easier to hear. You can duck out the bass in a subtle way - just enough for that kick to cut through. Or you can duck out the bass by a lot and introduce a pumping effect into your mix. The example given is typically done through side chaining, but can also be done with an LFO. See 'sidechaining' in the vocab section and LFO vs Compressors in the notes section.",
@@ -30,6 +54,73 @@
             {
               "title": "LMMS Forum: Using a Peak Controller for Ducking/Sidechaining",
               "link": "https://lmms.io/forum/viewtopic.php?t=1181"
+            }
+          ]
+      },
+      "equalizer": {
+          "word": "Equalizer (EQ)",
+          "definition": "Equalizers give you fine control over the frequency content of a track or sound. It is a collection of low pass, high pass, band pass, and band stop, and shelf filters that are used to boost or cut any portion of the frequency spectrum. This can be used for four main reasons. To clean up crappy parts of a recording/sample, to accentuate the nice parts of a sound, to create space for other elements in a mix, or to just change the sound/timbre of an instrument.",
+          "links": [
+            {
+              "title": "What is SideChaining (Introduces the term Ducking)",
+              "link": "https://ledgernote.com/columns/mixing-mastering/what-is-sidechaining/"
+            },
+            {
+              "title": "LMMS Forum: Using a Peak Controller for Ducking/Sidechaining",
+              "link": "https://lmms.io/forum/viewtopic.php?t=1181"
+            }
+          ]
+      },
+
+      "gainautomation": {
+          "word": "Gain Automation",
+          "definition": "Gain automation is another 'chery on top' technique that you can use to set your mix apart. Gain automation is when you use automation within your DAW to alter the gain (incoming signal before processing) of your signal in certain parts of the track. The idea here is to reduce the dynamic range of a track so that compression and your track become more consistent. You usually want to bring up lower energy portions of your track and bring down the higher energy ones so that you have an overall average energy that is the same throughout the whole track. This is a really good technique to use with compression, if it is done right. However, don't think that this is something you should do to every individual track and sample you have. In fact, you probably shouldn't. You need to make an artistic choice, because sometimes your mix will sound better with that higher dynamic range. Sometimes you really just want that peak to punch through or you want to create space with a quieter channel. There is a compromise between these two choices however. You can do gain automation to bring parts of your track up or down. But then, you can use volume automation to compensate for some of that dynamic range that you lost out on. This will obviously still alter your sound, but it is an option that you have.",
+          "links": [
+            {
+              "title": "Gain Automation (The Secret Sauce of Compression)",
+              "link": "https://www.youtube.com/watch?v=aun6XN63Jvo&ab_channel=MusicianonaMission"
+            }
+          ]
+      },
+
+      "gainstaging": {
+          "word": "Gain Staging",
+          "definition": "For some reason this was one of the most confusing things to learn about. And honestly, I'm not even sure I fully understand the concept yet. It seems like there's so many definitions for it and a lot of people have different opinions about how it should be done. The closest happy definition that I have found, is that gain staging, is anything that you do to control the levels throughout your mixing process at any point in the signal chain or mix. The goal here is make mixing an easier process. You want to control your levels so that you do not clip at any point within your signal chain. However, you also want to make sure all the elements in your mix are properly balanced and have the right energy so they are not lost or coming in too hot in the rest of the mix. This gain staging issue is much more relevant today because we deal with digital signals. Digital signals have a certain bit resolution limitation. Depending on your resolution, you have a certain number of bits available to represent different amplitudes of a signal. The topmost amplitude, is usually 0dbFS in the digital realm. This is the highest amplitude in your digital system. Digital systems literally cannot represent signals with an amplitude greater than 0dbFS. The signal clips. This was not really an issue back in the analog day. Depending on your analog medium, 0dB kind of repesented the point at which the analog medium started introducing distortion. However, this wasn't like digital distortion. Digital clipping usually just sounds disgusting. In analog, you could usually go higher than 0dB by quite a bit before anything started sounding gross. Sometimes going past the 0dB point could introduce some nice tones and give your signal a nice sound. Anyways, I don't want to make this a lesson on how digital vs analog works. The point I'm making is that gain staging is more relevant because of that 0dbFS cutoff that digital systems introduce. Gain staging can improve your mix and make mixing much nicer. I'm going to talk about a few ways you can gain stage your mix. The first thing you want to do, happens even before you start mixing. You want to take all of your input channels and modify the incoming gain on each signal individually to bring the energy up or down. Note that this is not gain automation. I'm just adjusting the overall incoming gain of the whole entire channel. You want to set up a system where you target a certain signal level. You want your average/overall signal levels to be a certain dB. And you don't want your peaks going past a certain level of dB. The MusicianOnAMission video below has a pretty good system for this. The idea here is that your samples and instruments were all recorded differently and have different elements with different average energies and peak in different places. You want to get all of these different elements to a standard level that you set yourself and that you are comfortable with. This should give you the headroom you need and put all of the instruments on a level playing field so that you can have less issues as you start mixing. VU meters are usually pretty good for average or overall energy. They take the average of your incoming signal's energy and give you a value in dB. dbFS meters will give you the instant energy level of your peak. You can use this to see how high up your peaks are reaching. You don't want to clip and you want to give yourself enough headroom. Another thing you should do during gain staging is monitoring how much your plugins and processing on the signal chain are affecting your levels. Humans hear louder sounds as better. It's just a fact. Plugins that pump up the gain of an incoming signal after processing can make them sound better because of the processing. But they could just sound better because they turned up the volume. When dealing with plugins, you need to compensate for gain added or removed. Plugins should have unity gain. If your signal goes through a plugin with -9dB then it should come out of the plugin with -9dB. Use the plugins makeup gain to compensate or you can just add an amplifier yourself. This will allow you to REALLY determine if the plugin made your sound better. If you have unity gain, then you know if the instrument sounds better after the processing, that it really does sound better and is not due to pumping up the volume. And then another obvious thing you should do as you're gain staging. Leave yourself some freaking headroom. You need a lot of headroom as you play around with your mix to see how much of an instrument you want to put here or there. But you also need some more headroom for your mastering. Standard headroom is usually -6dBFS for mastering.",
+          "links": [
+            {
+              "title": "Gain Staging: What it is and How to Do it.",
+              "link": "https://www.izotope.com/en/learn/gain-staging-what-it-is-and-how-to-do-it.html"
+            },
+            {
+              "title": "What is Gain Staging and How it Can Improve your Mix.",
+              "link": "https://cymatics.fm/blogs/production/what-is-gain-staging"
+            },
+            {
+              "title": "Gain Staging: Supercharge your Mix with these Simple Steps.",
+              "link": "https://www.musicianonamission.com/gain-staging/"
+            },
+            {
+              "title": "(MusicianOnAMission) A Complete Guide to Gain Staging (your questions answered)",
+              "link": "https://www.youtube.com/watch?v=Tq5lDHCKt84&ab_channel=MusicianonaMission"
+            },
+            {
+              "title": "Gain Staging Like a Pro",
+              "link": "https://www.sweetwater.com/insync/gain-staging/"
+            },
+            {
+              "title": "Gain Staging: Secret to Get Good Levels in Your Mix",
+              "link": "https://www.recordingbase.com/gain-staging/"
+            }
+          ]
+      },
+
+      "gain": {
+          "word": "Gain",
+          "definition": "Gain is the level of a signal (generally in dB) before it goes through a signal chain (before all of your processing). This is essentially the raw level of your incoming sample or individual track. Most DAWs have a knob or something that let's you control this gain. When you move the knob you are altering the file/sample itself. Contrast this with volume, which is the level of the signal after going through the signal chain. It is important to note that this is a contextual definition. Not everyone will go by this convention and volume and gain can be used interchangebly and to label different things. This distinction between volume and gain is good to have when you're doing something like gain staging.",
+          "links": [
+            {
+              "title": "A Complete Guide to Gain Staging",
+              "link": "https://www.youtube.com/watch?v=Tq5lDHCKt84&t=133s&ab_channel=MusicianonaMission"
             }
           ]
       },
@@ -109,6 +200,34 @@
               "link": "https://www.perfectcircuit.com/signal/learn-synthesis"
             }
           ]
+        },
+        "volumeriding": {
+            "word": "Volume/Fader Riding",
+            "definition": "This is also known as Volume Automation. The term riding comes from physically moving up, or riding, your faders. The whole point of this technique is to create or reduce energy within a song and direct the user's attention to a certain element in a track. This technique is definitely a cherry on top of your mix. It is not essential, but sprinkling some volume automation throughout your mix can really set you apart and push you past that line to the next level. Listen to your mix. If there are certain instruments that you feel should be louder in some portions of the track, even if it's for a second, then bring them up. This helps create energy, fill empty space, and direct the user to focus on that particular element. You can do this by hand or add automation in your DAW to do this.",
+            "links": [
+              {
+                "title": "Bring Energy and Dynamics to Your Mix With Volume Fader Rides",
+                "link": "https://www.recordingrevolution.com/bring-energy-and-dynamics-to-your-mix-with-volume-fader-rides-video/"
+              },
+              {
+                "title": "How to Hook the Listener with Volume Automation",
+                "link": "https://www.musicianonamission.com/hook-listener-volume-automation/"
+              },
+              {
+                "title": "(Discussion) How is a Compressor different from Gain/Fader Riding?",
+                "link": "https://music.stackexchange.com/questions/106688/how-is-a-compressor-different-from-gain-fader-riding"
+              }
+            ]
+        },
+        "volume": {
+            "word": "Volume",
+            "definition": "Volume is the level of a signal (generally in dB) at the end of a signal chain (after all of your processing). You control how much of this eventually makes it into the mix using faders on your mixing console. Contrast this with gain, which is the level of the signal before going through the signal chain. It is important to note that this is a contextual definition. Not everyone will go by this convention and volume and gain can be used interchangebly and to label different things. This distinction between volume and gain is good to have when you're doing something like gain staging.",
+            "links": [
+              {
+                "title": "A Complete Guide to Gain Staging",
+                "link": "https://www.youtube.com/watch?v=Tq5lDHCKt84&t=133s&ab_channel=MusicianonaMission"
+              }
+            ]
         },
         "zynaddsubfx" : {
           "word": "ZynAddSubFX",

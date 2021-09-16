@@ -25,6 +25,13 @@ class CentrifugalPumps extends Component {
             {this.state.definitionComponents}
           </ul>
         </div>
+        <div>
+          <h2>Notes</h2>
+          <ul>
+            <li>
+            </li>
+          </ul>
+        </div>
       </div>
     );
   }
