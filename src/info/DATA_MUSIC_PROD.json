@@ -62,12 +62,12 @@
           "definition": "Equalizers give you fine control over the frequency content of a track or sound. It is a collection of low pass, high pass, band pass, and band stop, and shelf filters that are used to boost or cut any portion of the frequency spectrum. This can be used for four main reasons. To clean up crappy parts of a recording/sample, to accentuate the nice parts of a sound, to create space for other elements in a mix, or to just change the sound/timbre of an instrument.",
           "links": [
             {
-              "title": "What is SideChaining (Introduces the term Ducking)",
-              "link": "https://ledgernote.com/columns/mixing-mastering/what-is-sidechaining/"
+              "title": "How to Use EQ: 10 Amazing Tips for a Professional Mix",
+              "link": "https://www.musicianonamission.com/approach-equalization-two-types-eq/"
             },
             {
-              "title": "LMMS Forum: Using a Peak Controller for Ducking/Sidechaining",
-              "link": "https://lmms.io/forum/viewtopic.php?t=1181"
+              "title": "The Ultimate EQ Cheat Sheet for Every Common Instrument",
+              "link": "https://blog.sonicbids.com/the-ultimate-eq-cheat-sheet-for-every-common-instrument"
             }
           ]
       },
@@ -146,6 +146,12 @@
               "links": []
           },
 
+          "modulation": {
+                "word": "Modulation",
+                "definition": "Controlling a parameter of s signal or waveform with the amplitude of another signal or waveform. An example of modulation is amplitude modulation, where the amplitude of a signal changes based on another waveform's amplitude. You can have phase modulation, where the phase of a signal changes based on another input signal's current amplitude. You can have frequency modulation, where the (you guess it) frequency of a waveform is controlled by another signal. This can be used for automation, creating cool effects, creating different sounds, etc.",
+                "links": []
+            },
+
         "pad": {
               "word": "Pad or Pad Synth",
               "definition": "A sustained sound that is used to add thickness and atmosphere to a mix or composition. The sound is typically made up of stacked instruments or synths. Additionally, a unison effect can be used to widen the frequency spread of the sound, so the sound has more of an impact. The idea is to fill up the room with, what I would call, 'warmth'. You want the pad to fill in all the open space in a mix or composition, so you get a more full effect.",
@@ -156,6 +162,11 @@
                 }
               ]
           },
+          "pan": {
+                "word": "Pan",
+                "definition": "Knob used to control where a track sits in the stereoscopic field. By default, sounds will e directly in front of you in the middle of the stereo view. You can pan right or left by a percentage from -100% to 100% to change how much the 'instrument' will sit to the left or right relative to the listener.",
+                "links": []
+            },
 
         "portamento": {
             "word": "Portamento",
@@ -174,6 +185,10 @@
             {
               "title": "Reverb vs Delay. When to use Each one.",
               "link": "https://www.izotope.com/en/learn/when-to-use-reverb-and-delay.html"
+            },
+            {
+              "title": "How to Use Reverb Like a Pro - 3 Simple Tips for 3D Mixes",
+              "link": "https://www.musicianonamission.com/how-to-use-reverb/"
             }
           ]
         },

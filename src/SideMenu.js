@@ -18,6 +18,7 @@ class SideMenu extends Component {
           <NavLink to="/quantum_mechanics" onClick={this.props.hamburgercallback}><li>Quantum Mechanics</li></NavLink>
           <NavLink to="/javascript" onClick={this.props.hamburgercallback}><li>Javascript</li></NavLink>
           <NavLink to="/centrifugal_pumps" onClick={this.props.hamburgercallback}><li>Centrifugal Pumps</li></NavLink>
+          <NavLink to="/data_science" onClick={this.props.hamburgercallback}><li>Data Science</li></NavLink>
         </ul>
       </div>
     );

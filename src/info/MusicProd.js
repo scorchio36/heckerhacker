@@ -58,6 +58,7 @@ class MusicProd extends Component {
                   <li><a href="https://tytel.org/helm/">Helm - Matt Tytel</a></li>
                   <li><a href="https://www.meldaproduction.com/">MeldaProductions Suite of Tools</a></li>
                   <li><a href="http://bram.smartelectronix.com/plugins.php?id=4">s(M)exoscope by SmartElectronix</a></li>
+                  <li><a href="https://michaelwillis.github.io/dragonfly-reverb/manuals.html">Dragonfly Reverb</a></li>
                 </ul>
               </li>
               <li>
@@ -86,14 +87,42 @@ class MusicProd extends Component {
                     Compression is another must when it comes to mixing. It is used to control your dynamics and change the feel or thickness of your tracks.
                   </li>
                   <li>
-                    Reverb and Delay can bring a more authentic feeling to your mix. 
+                    Reverb and Delay can bring a more authentic feeling to your mix.
                   </li>
                   <li>
-                    Make sure you leave headroom in your final mix for mastering. Standard is to not let your peaks exceed -6dBFS. I have found it may be easier to mix at a lower level than this though. You can mix between -18dBFS to -12dBFS with confidence that you won't ever break that -6dBFS ceiling. When you're happy with your mix, if you aren't peaking at -6dBFS you can just move all of your tracks up until you are peaking there.
+                    Make sure you leave headroom in your final mix for mastering. Standard is to not let your peaks exceed -6dBFS. I have found it may be easier to mix at a lower level than this though. You can mix between -18dBFS to -12dBFS with confidence that you won't ever break that -6dBFS ceiling. When you're happy with your mix, if you aren't peaking at -6dBFS you can just move all of your tracks up until you are peaking there. This is just to make sure nothing is clipping and added amplitudes in mastering don't cause anything to clip.
+                  </li>
+                  <li>
+                    It may sound unnatural if your lead is just sitting on top of the mix directly. It may be a good idea, especially in electronic music, to duck out the lead by a bit based on when the kick/snare hits.
+                  </li>
+                  <li>
+                    You can and often should put a compressor on most tracks in your mix. They can compress themselves or be sidechained by the kick and snare.
+                  </li>
+                  <li>
+                    Use a bass booster to boost your bass. Then use a limiter or compressor to reduce amplitude variation in your bass. You can then use an LFO tool or compressor to duck out the bass on kicks.
+                  </li>
+
+                  <li>
+                    <h4>Some Mixing Links</h4>
+                    <ul>
+                      <li><a href="https://www.youtube.com/watch?v=l3MfluPFbzM&t=1234s&ab_channel=wickiemedia">Wikiemedia - Mix Like a Pro - 12 Track Song</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=YEorsfZe4vU&list=RDCMUCchjpg1aaY91WubqAYRcNsg&start_radio=1&rv=YEorsfZe4vU&t=1&ab_channel=wickiemedia">Wikiemedia - Basic Mixing Theory #1</a></li>
+                    </ul>
                   </li>
                 </ul>
               </li>
 
+              <li>
+                <h3>Bass Tone Glossary</h3>
+                <p><a href="https://www.talkbass.com/wiki/bass-tone-glossary/">Glossary</a> describing common words used to describe bass sounds.</p>
+              </li>
+
+              <li>
+                <h3>Good places to Find Samples</h3>
+                <ul>
+                  <li><a href="https://soundcamp.org/">SoundCamp (Better to search on google with keyword of sample)</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>

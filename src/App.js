@@ -13,6 +13,7 @@ import SideMenu from './SideMenu';
 import QuantMech from './info/QuantMech';
 import Javascript from './info/Javascript';
 import CentrifugalPumps from './info/CentrifugalPumps';
+import DataScience from './info/DataScience';
 import Home from './Home';
 const SIDEMENU_OFFSCREEN_OFFSET = "-290px"; // How many pixels until the sidemenu is completely off-screen (may need to be adjusted for different devices)
 
@@ -46,6 +47,7 @@ class App extends Component {
               <Route path="/quantum_mechanics" component={ QuantMech } />
               <Route path="/javascript" component={ Javascript } />
               <Route path="/centrifugal_pumps" component={ CentrifugalPumps } />
+              <Route path="/data_science" component={ DataScience } />
             </div>
           </div>
         </HashRouter>
