@@ -14,6 +14,8 @@ import QuantMech from './info/QuantMech';
 import Javascript from './info/Javascript';
 import CentrifugalPumps from './info/CentrifugalPumps';
 import DataScience from './info/DataScience';
+import Neurology from './info/Neurology';
+import FundamentalAnalysis from './info/FundamentalAnalysis';
 import Home from './Home';
 const SIDEMENU_OFFSCREEN_OFFSET = "-290px"; // How many pixels until the sidemenu is completely off-screen (may need to be adjusted for different devices)
 
@@ -43,11 +45,12 @@ class App extends Component {
             <SideMenu menuOffset={this.state.menuOffset} hamburgercallback={this.toggleMenuVisibility}/>
             <div className="content">
               <Route exact path="/" component={ Home } />
-              <Route path="/music_production" component={ MusicProd } />
-              <Route path="/quantum_mechanics" component={ QuantMech } />
-              <Route path="/javascript" component={ Javascript } />
               <Route path="/centrifugal_pumps" component={ CentrifugalPumps } />
               <Route path="/data_science" component={ DataScience } />
+              <Route path="/fundamental_analysis" component={ FundamentalAnalysis } />
+              <Route path="/music_production" component={ MusicProd } />
+              <Route path="/neurology" component={ Neurology } />
+              <Route path="/quantum_mechanics" component={ QuantMech } />
             </div>
           </div>
         </HashRouter>

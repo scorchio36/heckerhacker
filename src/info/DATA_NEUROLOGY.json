@@ -1,0 +1,44 @@
+{
+  "terms":
+    {
+        "numpy": {
+            "word": "Numpy",
+            "definition": "Python library for doing scientific computation. It allows for vectorization and promotes using this over typical, single element, for-loop calculations. Numpy is built around the ndarray object, which you can think of as basically a better python array. It provides more functionality and a library of functions that are useful in scientific computing. At it's core, Numpy is a precompiled library of C code that makes calculations faster, more efficient, and more legible.",
+            "links": [
+              {
+                "title": "Numpy Quickstart",
+                "link": "https://numpy.org/doc/stable/user/quickstart.html"
+              },
+              {
+                "title": "Numpy Manual",
+                "link": "https://numpy.org/doc/stable/index.html#numpy-docs-mainpage"
+              },
+              {
+                "title": "Numpy Reference",
+                "link": "https://numpy.org/doc/stable/reference/"
+              }
+            ]
+        },
+
+        "pandas": {
+            "word": "Pandas",
+            "definition": "A python library that is based all around data analysis. Pandas helps you read, analyze, visualize, and even clean up your data. The workhorse of this library is the DataFrame object. It is a very fancy tabular data structure with an extensive set of functions that help you achieve the aforementioned capabilities of the library. The DataFrame also integrates very nicely with Matplotlib.",
+            "links": [
+              {
+                "title": "Python Pandas Tutorial: A Complete Introduction for Beginners",
+                "link": "https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/"
+              },
+              {
+                "title": "Pandas Documentation",
+                "link": "https://pandas.pydata.org/pandas-docs/stable/"
+              }
+            ]
+        },
+
+        "vectorization": {
+            "word": "Vectorization",
+            "definition": "Traditionally, when you have a set of data you would like to iterate through, you go through each data element, one-by-one, with a for loop. Vectorization refers to taking a more linear-algebra approach to this iterative process. Instead of performing computations by traversing through your data with for loops, you can organize your data into arrays and matrices. Your calulations can then be done all at once with a matrix multiplication, dot product, etc.",
+            "links": []
+        }
+    }
+}

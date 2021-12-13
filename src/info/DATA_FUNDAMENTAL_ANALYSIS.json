@@ -1,0 +1,109 @@
+{
+  "terms":
+    {
+        "asset": {
+            "word": "Asset",
+            "definition": "Something of monetary value that is owned by a company. A company can have tangible assets like trucks, raw meterials, or machinery. It can also have intangible assets like patents. The amount of assets a company currently owns, minus the debt that it owes, essentially tells you how much the company is currently worth.",
+            "links": [
+              {
+                "title": "Investopedia - Asset",
+                "link": "https://www.investopedia.com/terms/a/asset.asp"
+              },
+              {
+                "title": "BeginToInvest - Assets",
+                "link": "https://www.begintoinvest.com/definitions/assets/"
+              }
+            ]
+        },
+
+        "balancesheet": {
+            "word": "Balance Sheet",
+            "definition": "A financial document that tells you what a company owns (Total Assets) and what a company owes (Total Liabilities/Debt). The balance sheet can also tell you Total Equity and the amount of common or preferred shares outstanding. Make sure you look closely at this document. Pay attention to things that the company considers assets and liabilities and how they break down the total value of those items. Companies love to fudge numbers to make themselves look better, but there may also be extraordinary items or exceptions only pertinent to that the time block you are looking at. Companies in the U.S. are required by law to disclose this information to the SEC every quarter. This is one of the 'Big 3' financial documents. The other two are the Income Statement and Cash Flow.",
+            "links": [
+              {
+                "title": "Investopedia - Balance Sheet",
+                "link": "https://www.investopedia.com/terms/b/balancesheet.asp"
+              },
+              {
+                "title": "Investopedia - Reading the Balance Sheet",
+                "link": "https://www.investopedia.com/articles/04/031004.asp"
+              },
+              {
+                "title": "BeginToInvest - Balance Sheet",
+                "link": "https://www.begintoinvest.com/definitions/balance-sheet/"
+              }
+            ]
+        },
+
+        "bearmarket": {
+            "word": "Bear Market",
+            "definition": "A bear market is a period of cynicism in which prices of a security or asset are expected to, and usually do, fall significantly over time. If someone is cynical about the future price action of a security or asset, they are said to be 'bearish' about that particular asset.",
+            "links": []
+        },
+
+        "bullmarket": {
+            "word": "Bull Market",
+            "definition": "A bull market is a period of optimism in which prices of a security or asset are expected to, and usually do, rise significantly over time. If someone is optimistic about the future price action of a security or asset, they are said to be 'bullish' about that particular asset.",
+            "links": []
+        },
+
+        "equity": {
+            "word": "Equity",
+            "definition": "How much a company is worth if it were to liquidate all of it's assets and pay off all of its debt.",
+            "links": []
+        },
+
+        "growthstock": {
+            "word": "Growth Stock",
+            "definition": "A stock that is expected to grow much more rapidly than the market average. Money made is invested right back into the company in an effort to continually increase a stock's price. When you put your money into growth stocks, you are trying to make money from capital gains rather than through dividends.",
+            "links": [
+              {
+                "title": "Investopedia: What is a Growth Stock?",
+                "link" : "https://www.investopedia.com/terms/g/growthstock.asp"
+              }
+            ]
+        },
+
+        "incomestatement": {
+            "word": "Income statement",
+            "definition": "A financial document that tells you how much profit a company generated over a certain time period and what it cost the company to generate that profit. It breaks down information like Revenue, Liabilities (debt), Gross Profit, and Net Income. There is a sort of flow when it comes to looking at the Income Statement. You start with the Total Revenue and from that you can subtract the Total Cost of Revenue to get the Gross Profit. Then you can subtract the Total Operating Expense from the Gross profit to get the Total Operating Income. Companies in the U.S. are required by law to disclose this information to the SEC every quarter. This is one of the 'Big 3' financial documents. The other two are the Balance Sheet and Cash Flow.",
+            "links": [
+              {
+                "title": "Investopedia - Balance Sheet",
+                "link": "https://www.investopedia.com/terms/b/balancesheet.asp"
+              },
+              {
+                "title": "Investopedia - Reading the Balance Sheet",
+                "link": "https://www.investopedia.com/articles/04/031004.asp"
+              },
+              {
+                "title": "BeginToInvest - Balance Sheet",
+                "link": "https://www.begintoinvest.com/definitions/balance-sheet/"
+              }
+            ]
+        },
+
+        "netincome": {
+            "word": "Net Income",
+            "definition": "The total amount of money that a company brings in after both expenses and taxes have been subtracted from revenue.",
+            "links": []
+        },
+
+        "roa": {
+            "word": "Return on Assets (ROA)",
+            "definition": "Defined as the business's net income divided by the companies current assets. You can also multiply by 100 to get a percentage. This tells you how efficiently the company is using it's assets to generate a profit. Let's say company 1 and company 2 both make the same net income for this quarter: $50 million. However, company 1 only has $10 million in assets, while company 2 has $40 million in assets. This means that company 1 only needed a quarter of what company 2 needed in assets in order to generate the same $50 million that company 2 generated. Company 1 is much more efficient and effective at using it's assets to generate profit.",
+            "links": []
+        },
+
+        "roe": {
+            "word": "Return on Equity (ROE)",
+            "definition": "Defined as the business's net income divided by the companies current equity. You can also multiply by 100 to get a percentage. This tells you how efficiently the company is using it's assets to generate a profit. Let's say company 1 and company 2 both make the same net income for this quarter: $50 million. However, company 1 only has $10 million in assets, while company 2 has $40 million in assets. This means that company 1 only needed a quarter of what company 2 needed in assets in order to generate the same $50 million that company 2 generated. Company 1 is much more efficient and effective at using it's assets to generate profit.",
+            "links": []
+        },
+        "revenue": {
+            "word": "Revenue",
+            "definition": "The total amount of money that a company brings in before the cost of making that money is taken into account. A company could have made $12 million this quarter in revenue, but if it cost $3 million in raw material and $2 million in advertising to generate that revenue, then the company will only bring in $7 million in profit (a.k.a gross profit on the income statement).",
+            "links": []
+        }
+    }
+}
