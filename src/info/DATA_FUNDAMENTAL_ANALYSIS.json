@@ -89,6 +89,12 @@
             "links": []
         },
 
+        "pricetoearningsratio": {
+            "word": "Price-to-Earnings (P/E) Ratio",
+            "definition": "The current price of a share divided by a company's current earnings-per-share (EPS). This ratio tells you how undervalued or overvalued a stock appears to be. You can think of it as how much money a stock brings in (EPS) versus how much it will cost to buy one share (current stock price). Is it worth it to buy this stock at this price if it's only brining in so much earnings? If you have a high P/E ratio, that implies that the stock's current price is pretty high aand the earnings per share are on the smaller side. You can think of this stock as being very overvalued because it's not bringing in enough earnings to justify the high cost of the stock. With a low P/E ratio, a stock is most likely low in price and bringing in a lot of earnings. This implies that the stock is undervalued, as you can pay very little for the stock and expect a lot of earnings to come in. Beware, this ratio is not as straightforward as it seems and you should not solely use it as an indication that a stock is a good or bad investment. In fact, William J Oneill's financial models in 'How to Make Money in Stocks' indicated that P/E ratio actually carries very little weight in predicting breakouts of stocks.",
+            "links": []
+        },
+
         "roa": {
             "word": "Return on Assets (ROA)",
             "definition": "Defined as the business's net income divided by the companies current assets. You can also multiply by 100 to get a percentage. This tells you how efficiently the company is using it's assets to generate a profit. Let's say company 1 and company 2 both make the same net income for this quarter: $50 million. However, company 1 only has $10 million in assets, while company 2 has $40 million in assets. This means that company 1 only needed a quarter of what company 2 needed in assets in order to generate the same $50 million that company 2 generated. Company 1 is much more efficient and effective at using it's assets to generate profit.",
