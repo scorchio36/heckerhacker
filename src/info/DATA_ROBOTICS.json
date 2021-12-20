@@ -1,0 +1,191 @@
+{
+  "terms":
+    {
+        "cylindricaljoint": {
+            "word": "Cylindrical (C) Joint",
+            "definition": "A lower kinematic pair that constrains the motion of a link in 3D space. A rigid body has 6 degrees of freedom in 3D space. This joint places 4 constraints on one of the links with respect to the ground link, allowing only movement in one linear dimension and one angular dimension. The link can move in a linear fashion in parallel with the same axis that it rotates about for its one-dimensional angular motion. This joint allows for 2 D.O.F.",
+            "links": [
+              {
+                "title": "Wikipedia - Kinematic Pair",
+                "link": "https://en.wikipedia.org/wiki/Kinematic_pair"
+              },
+              {
+                "title": "Wikipedia - Cylindrical Joint",
+                "link": "https://en.wikipedia.org/wiki/Cylindrical_joint"
+              },
+              {
+                "title": "Cylindrical Joint in CAD",
+                "link": "https://www.youtube.com/watch?v=J7ykV88v6PM&ab_channel=AutodeskInventor"
+              }
+            ]
+        },
+
+        "degreesoffreedom": {
+            "word": "Degrees of Freedom (D.O.F.)",
+            "definition": "The number of independent variables that are needed to fully describe the position of a mechanism in space. This is also the dimension of the configuration space.",
+            "links": [
+              {
+                "title": "Lesics - Understanding Degrees of Freedom",
+                "link": "https://www.youtube.com/watch?v=vOFM8eG8kVc&ab_channel=Lesics"
+              },
+              {
+                "title": "Dr Joji Thomas - Degrees of Freedom",
+                "link": "https://www.youtube.com/watch?v=7zHePdzk_8A&t=216s&ab_channel=DrJojiThomas"
+              },
+              {
+                "title": "Northwestern Robotics - Degrees of Freedom of a Robot",
+                "link": "https://www.youtube.com/watch?v=zI64DyaRUvQ&ab_channel=NorthwesternRobotics"
+              },
+              {
+                "title": "Kinematics - The Design of Mechanisms: Degrees of Freedom",
+                "link": "https://www.brighthubengineering.com/machine-design/6634-kinematics-design-of-mechanisms-degrees-of-freedom/"
+              }
+            ]
+        },
+
+        "helicaljoint": {
+            "word": "Helical (H) Joint",
+            "definition": "A lower kinematic pair that constrains the motion a link in 3D space. A rigid body has 6 degrees of freedom in 3D space. This joint places 5 constraints on the link with the respect to the ground link, allowing only movement in one linear dimension. This is very similar to a prismatic joint, but the linear motion is accomplished through a helical or screwing motion of one of the links. This joint allows for 1 D.O.F.",
+            "links": [
+              {
+                "title": "Wikipedia - Kinematic Pair",
+                "link": "https://en.wikipedia.org/wiki/Kinematic_pair"
+              },
+              {
+                "title": "Wikipedia - Helical Joint",
+                "link": "https://en.wikipedia.org/wiki/Screw_joint"
+              },
+              {
+                "title": "Video of a Revolute Joint",
+                "link": "https://www.youtube.com/watch?v=fZqJopEL-k0&ab_channel=KeyanGhazi-Zahedi"
+              }
+            ]
+        },
+
+        "higherpair": {
+            "word": "Higher Pair",
+            "definition": "A type of kinematic pair that requires constant contact between the surfaces of two links. This differs from a Lower Pair, in that the two links are not 'locked' into one another. Their surfaces make contact, but they can be pulled apart easily. A cam pushing down the intake and exhaust valves within an engine is a good example. The cam maintains constant contact with the valves as it rotates due to the cam shaft. However, it's a sort of touch contact. The cam is not attached to the valves except through touch. The cam forms a pair or joint with the valves, but they are not physically locked into one another as something like a revolute joint would be.",
+            "links": [
+              {
+                "title": "Wikipedia - Kinematic Pair",
+                "link": "https://en.wikipedia.org/wiki/Kinematic_pair"
+              }
+            ]
+        },
+
+        "joint": {
+            "word": "Joint",
+            "definition": "A physical connection between two rigid bodies or links that places constraints on the motion of these rigid bodies. The joints will typically reduce the total Degrees of Freedom of a link or total mechanism.",
+            "links": []
+        },
+
+        "kinematicpair": {
+            "word": "Kinematic Pair",
+            "definition": "A connection between two physical objects that imposes constraints on the relative movement of the objects.",
+            "links": [
+              {
+                "title": "Wikipedia - Kinematic Pair",
+                "link": "https://en.wikipedia.org/wiki/Kinematic_pair"
+              }
+            ]
+        },
+
+        "link": {
+            "word": "Link",
+            "definition": "A rigid physical body with a certain number of degrees of freedom, depending on the dimension of the space that the rigid body is contained to. For example, a rigid body constrained to move only in a plane has 3 degrees of freedom: 2 variables for position and one for orientation (angular position). In 3D, a link has 6 degrees of freedom: 3 for position and 3 for orientation. This can actually continue into an arbitrary number of dimensions, with a link in 4D space having 10 degrees of freedom. Links are the rigid components that form joints with each other to eventually build up a complete mechanism.",
+            "links": []
+        },
+
+        "mechanism": {
+            "word": "Mechanism",
+            "definition": "The machine or robotic structure as a whole, including all of the links and joints.",
+            "links": []
+        },
+
+        "prismaticjoint": {
+            "word": "Prismatic (P) Joint",
+            "definition": "A lower kinematic pair that constrains the motion of 2 objects in 3D space. A rigid body has 6 degrees of freedom in 3D space. This joint places 5 constraints on either of the rigid bodies, allowing only movement in one linear dimension. This joint is often described as a slider as one link will slide or translate itself back and forth along a single linear axis. An example of this type of joint is a hydraulic cylinder. This joint allows for 1 D.O.F.",
+            "links": [
+              {
+                "title": "Wikipedia - Kinematic Pair",
+                "link": "https://en.wikipedia.org/wiki/Kinematic_pair"
+              },
+              {
+                "title": "Wikipedia - Prismatic Joint",
+                "link": "https://en.wikipedia.org/wiki/Prismatic_joint"
+              },
+              {
+                "title": "Picture of a Prismatic Joint",
+                "link": "https://doc.comsol.com/5.6/doc/com.comsol.help.mbd/images/mbd_ug_modeling.3.08.1.png"
+              }
+            ]
+        },
+
+        "revolutejoint": {
+            "word": "Revolute (R) Joint",
+            "definition": "A lower kinematic pair that constrains the motion of 2 objects in 3D space. A rigid body has 6 degrees of freedom in 3D space. This joint places 5 constraints on either of the rigid bodies, allowing only movement in one angular dimension or orientation. Both links will only be able to rotate along a common axis and will remain in full contact to the same plane throughout these rotations. This joint allows for 1 D.O.F.",
+            "links": [
+              {
+                "title": "Wikipedia - Kinematic Pair",
+                "link": "https://en.wikipedia.org/wiki/Kinematic_pair"
+              },
+              {
+                "title": "Wikipedia - Revolute Joint",
+                "link": "https://en.wikipedia.org/wiki/Revolute_joint"
+              },
+              {
+                "title": "Picture of a Revolute Joint",
+                "link": "https://de.maplesoft.com/support/help/content/12673/image55.png"
+              }
+            ]
+        },
+
+        "servo": {
+            "word": "Servo",
+            "definition": "A motor that is built to move within a contrained angle. For example, the motor can only move back and forth between 0 and 180 degrees. This motion is achieved by using a regular motor to drive a smart gear box. The gear box will appropriately step down the speed of the motor and only allow motion through the predefined angular range. Servo motors typically have three wires: power, ground, and a control line. Power and ground are there to provide the necessary current needed for operation of the servo. The control signal typically carries PWM signals as an input. The duty cycle of the PWM signal is decoded by the servo and the servo is moved to the appropriate angle corresponding to this decoded duty cycles (e.g. 0% duty cycle = 0 degrees, 100% = 180 degrees). The torque and defined motion of these devices make them very useful in robotics.",
+            "links": []
+        },
+
+        "sphericaljoint": {
+            "word": "Spherical (S) Joint",
+            "definition": "Also known as a 'Ball-And-Socket' joint, it is a lower kinematic pair that constrains the motion of two rigid bodies in 3D space. A rigid body has 6 degrees of freedom in 3D space. This joint places 3 constraints on either link, allowing movement in two orthogonal linear dimensions and one angular dimension. The constrained body will trace out a hemisphere. This joint allows for 3 D.O.F., as it requires 3 independent variables to describe the full range of motion",
+            "links": [
+              {
+                "title": "Wikipedia - Kinematic Pair",
+                "link": "https://en.wikipedia.org/wiki/Kinematic_pair"
+              },
+              {
+                "title": "Wikipedia - Ball Joint",
+                "link": "https://en.wikipedia.org/wiki/Ball_joint"
+              },
+              {
+                "title": "GIF of Spherical Joint in motion",
+                "link": "https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/2e21294fb1fd1c7759817d734021d3a6/large.gif"
+              },
+              {
+                "title": "this thing is freaking sick",
+                "link": "https://www.youtube.com/watch?v=AHUv9Zda_48&ab_channel=MDxmedia"
+              }
+            ]
+        },
+
+        "universaljoint": {
+            "word": "Universal (U) Joint",
+            "definition": "A lower kinematic pair that constrains the motion of two rigid bodies in 3D space. A rigid body has 6 degrees of freedom in 3D space. This joint places 4 constraints on either link, allowing movement in two orthogonal linear dimensions. You can think of this joint as an orthogonal combination of two revolute joints. This joint allows for 2 D.O.F.",
+            "links": [
+              {
+                "title": "Wikipedia - Kinematic Pair",
+                "link": "https://en.wikipedia.org/wiki/Kinematic_pair"
+              },
+              {
+                "title": "Wikipedia - Universal Joint",
+                "link": "https://en.wikipedia.org/wiki/Universal_joint"
+              },
+              {
+                "title": "GIF of Universal Joint in motion",
+                "link": "http://4.bp.blogspot.com/-_b857g8j_dI/UhSeE2TylfI/AAAAAAAABNA/07phnoUR8RI/s1600/uj3.gif"
+              }
+            ]
+        }
+    }
+}

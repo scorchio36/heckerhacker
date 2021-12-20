@@ -145,7 +145,69 @@ class FundamentalAnalysis extends Component {
                   <h4>Chapter 4 - (S) Supply and Demand: Small Capitalization Plus Big Volume Demand</h4>
                   <ul>
                     <li>
-                      Point 4.
+                      Companies with a large number of shares outstanding require a lot more demand to see any significant price increases. Therefore, it is more
+                      likely, and in your best interest to invest in companies that have a much lower number of shares outstanding. Price movements in companies
+                      with too many shares just require too much volume compared to companies with a much smaller amount of shares. It is simple supply and demand.
+                    </li>
+                    <li>
+                      The shares outstanding of common stock are what is potentially available to the public to be purchased. This is an important number to consider,
+                      as mentioned in the previous point. However, something just as important is the 'floating' supply. This is the amount of common shares available
+                      for purchase if you don't consider the stock that is owned by company management/officers. If top management owns a lot of stock in a company,
+                      the company is much more likely to be a great investment.
+                    </li>
+                    <li>
+                      In most cases, stay away from giant companies. In bigger companies, upper management typically doesn't own as much stock,
+                      there's less incentive to take risks and use imagination, and often times the chain from upper management down to the customer is just too long for
+                      management to really engage in anything. Even if the previous statements are not true about a company and they invent some cool new product, the
+                      resulting sales would still be too small to have a massive impact on the company. The company is just too big and new sales for new products account
+                      for only a small percentage of the total that the company brings in.
+                    </li>
+                    <li>
+                      O'neil's 40 year study found that 95% of companies had less than 25 million shares during their greatest periods of earnings. The average capitalization
+                      during this time period for these successful companies was 11.8 million shares. Look for companies with number of shares at this range/magnitude as
+                      opposed to ones that are in the hundreds of millions.
+                    </li>
+                    <li>
+                      Companies will often look to do a stock split after a nice price-run up lasting a year or two in an effort to make the now-cheaper stocks more attractive
+                      to investors. During a stock split a company multiplies the number of stock by a certain factor and divides the price by the same factor. So, for example, a
+                      2 to 1 split means the amount of stock in circulation will be doubled, but the price of each stock will be halved. The first time this happens is generally
+                      okay, but if a company continues splitting their stock after this, the capitalization will just become too big too quickly and growth will become sluggish.
+                      Also watch out for large ratio stock splits. Generally 1 to 2 or 3 to 2 (1.5) is acceptable. If a company is splitting 3 to 1 or 5 to 1, that may be a good
+                      indication to pull out. You should also back out if this is the second or third time a split is happening.
+                    </li>
+                    <li>
+                      A small or medium company that is actively buying back its own stock is a great investment because the company itself believes it is a great investment.
+                      It also means less available stock in the marketplace. The smaller supply means there doesn't need to be as much demand/volume to see significant price
+                      movement and growth.
+                    </li>
+                    <li>
+                      Companies with low debt-to-equity ratios are always a safer investment. Companies that are consistently decreasing their debt with respect to their equity
+                      on a yearly basis are also good signs for a company.
+                    </li>
+                    <li>
+                      Smaller capitlization companies tend to be more volatile, so there is more risk involved in the investment. But that also means there is more opportunity
+                      for significant growth. Watch out for low cap companies with no institutional sponsorship or ownership. They have low liquidity and a low following.
+                    </li>
+                    <li>
+                      Volume is the best indicator of supply and demand for a stock. The stocks you invest in should have low volumes on corrections and high
+                      volumes during upswings. If people are really bullish about a stock, you should see at least 50% increased volume than usual as a stock's price breaks away
+                      from its base structure/price. It can increase more than this, oftentimes.
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <h4>Chapter 5 - (L) Leader or Laggard: Which is Your Stock?</h4>
+                  <ul>
+                    <li>
+                      Don't buy a stock solely because it makes you feel comfortable or you know the name. Do your research and pick stocks that have a lot of potential for
+                      good growth. Oftentimes, an industry will only have two to three stocks that perform very well, while the remaining stocks in that industry stay stangnant.
+                      If you are focusing on comfort picks, you may miss out on these two or three diamond stocks that explode to the moon.
+                    </li>
+                    <li>
+                      Don't invest in sympathy stocks. A sympathy stock follows the price movement of a leading stock within the same industry group. However, the sympathy stock
+                      will show much weaker performance and price movement as compared to the industry leader stock. The leading stock will make great movements and while weaker
+                      stocks within that industry will attempt to (but fail to) follow, "in sympathy", the price movement of the leading stock. Always look for the group leader.
                     </li>
                   </ul>
                 </li>

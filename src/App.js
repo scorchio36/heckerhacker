@@ -16,6 +16,7 @@ import CentrifugalPumps from './info/CentrifugalPumps';
 import DataScience from './info/DataScience';
 import Neurology from './info/Neurology';
 import FundamentalAnalysis from './info/FundamentalAnalysis';
+import Robotics from './info/Robotics';
 import Home from './Home';
 const SIDEMENU_OFFSCREEN_OFFSET = "-290px"; // How many pixels until the sidemenu is completely off-screen (may need to be adjusted for different devices)
 
@@ -51,6 +52,7 @@ class App extends Component {
               <Route path="/music_production" component={ MusicProd } />
               <Route path="/neurology" component={ Neurology } />
               <Route path="/quantum_mechanics" component={ QuantMech } />
+              <Route path="/robotics" component={Robotics} />
             </div>
           </div>
         </HashRouter>

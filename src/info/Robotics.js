@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
 import Definition from './Definition';
 import getVocabSection from './VocabHelper';
-const DATA_CENTRIFUGAL_PUMPS = require('./DATA_CENTRIFUGAL_PUMPS.json');
+const DATA_ROBOTICS = require('./DATA_ROBOTICS.json');
 
-class CentrifugalPumps extends Component {
+class Robotics extends Component {
 
 
   constructor(props) {
     super(props);
 
     this.state = {
-      definitionComponents: getVocabSection(DATA_CENTRIFUGAL_PUMPS)
+      definitionComponents: getVocabSection(DATA_ROBOTICS)
     }
   }
   render() {
@@ -18,7 +18,7 @@ class CentrifugalPumps extends Component {
     return (
 
       <div>
-        <h1>Resources/Notes for Centrifugal Pumps</h1>
+        <h1>Resources/Notes for Robotics</h1><hr/>
         <div>
           <h2>Vocab</h2>
           <ul>
@@ -27,12 +27,10 @@ class CentrifugalPumps extends Component {
         </div>
         <div>
           <h2>Notes</h2>
-          <ul>
-          </ul>
         </div>
       </div>
     );
   }
 }
 
-export default CentrifugalPumps;
+export default Robotics;

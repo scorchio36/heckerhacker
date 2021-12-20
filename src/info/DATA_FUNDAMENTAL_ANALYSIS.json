@@ -47,6 +47,38 @@
             "links": []
         },
 
+        "corporatebond": {
+            "word": "Corporate Bond",
+            "definition": "Bonds sold by corporations in an effort to raise capital quickly to fund big projects. These bonds have a maturity, which is the time a company has before the principal of the sold bonds must be paid back to investors. These bonds also have interest payments, called coupon payments. They can be fixed, floating, etc. A major characteristic about corporate bonds is their grade. The credit quality of the companies and the bonds they offer are periodically evaluated by credit rating agencies. These agencies classify the bonds as investment grade or non-investment grade. The grade is based on how likely a company is to default on its payments to the investors.",
+            "links": [
+              {
+                "title":"Investor.gov - Corporate Bonds",
+                "link":"https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products"
+              }
+            ]
+        },
+
+        "corporatedebt": {
+            "word": "Corporate Debt",
+            "definition": "Can refer to either general long-term debt a company owns from loans or corporate bonds.",
+            "links": []
+        },
+
+        "debttoequityratio": {
+          "word": "Debt-to-Equity Ratio",
+          "definition":  "You can calulate this from the balance sheet. Subtract your Liabilities from your Assets to get your Equity in dollars. Then divide the Liabilities by the Equity amount. This is the debt-to-equity ratio and tells you how leveraged (how much of the company's operations are being financed through debt) a company is. A high debt-to-equity ratio means that a company is highly leveraged. They have a lot of debt and not as much in assets. This makes the company more risky to invest in. If a company has a low debt-to-equity ratio, this means it is less risky to invest in.",
+          "links": [
+            {
+              "title": "Investopedia - Debt-to-Equity (D/E) Ratio",
+              "link": "https://www.investopedia.com/terms/d/debtequityratio.asp"
+            },
+            {
+              "title": "Investopedia - Leverage",
+              "link": "https://www.investopedia.com/terms/l/leverage.asp"
+            }
+          ]
+        },
+
         "equity": {
             "word": "Equity",
             "definition": "How much a company is worth if it were to liquidate all of it's assets and pay off all of its debt.",
@@ -95,6 +127,23 @@
             "links": []
         },
 
+        "relativepricestrength": {
+            "word": "Relative Price Strength",
+            "definition": "The ratio of stock performance to a market average (index) performance. To calculate the relative strength of a particular stock, divide the price percentage change over some time period by the percentage change in price of a particular index over that same time period. Don't confuse this with the Relative Strength Index.",
+            "links": [
+              {
+                "title": "Investopedia - Relative Strength",
+                "link": "https://www.investopedia.com/terms/r/relativestrength.asp"
+              }
+            ]
+        },
+
+        "revenue": {
+            "word": "Revenue",
+            "definition": "The total amount of money that a company brings in before the cost of making that money is taken into account. A company could have made $12 million this quarter in revenue, but if it cost $3 million in raw material and $2 million in advertising to generate that revenue, then the company will only bring in $7 million in profit (a.k.a gross profit on the income statement).",
+            "links": []
+        },
+
         "roa": {
             "word": "Return on Assets (ROA)",
             "definition": "Defined as the business's net income divided by the companies current assets. You can also multiply by 100 to get a percentage. This tells you how efficiently the company is using it's assets to generate a profit. Let's say company 1 and company 2 both make the same net income for this quarter: $50 million. However, company 1 only has $10 million in assets, while company 2 has $40 million in assets. This means that company 1 only needed a quarter of what company 2 needed in assets in order to generate the same $50 million that company 2 generated. Company 1 is much more efficient and effective at using it's assets to generate profit.",
@@ -106,10 +155,20 @@
             "definition": "Defined as the business's net income divided by the companies current equity. You can also multiply by 100 to get a percentage. This tells you how efficiently the company is using it's assets to generate a profit. Let's say company 1 and company 2 both make the same net income for this quarter: $50 million. However, company 1 only has $10 million in assets, while company 2 has $40 million in assets. This means that company 1 only needed a quarter of what company 2 needed in assets in order to generate the same $50 million that company 2 generated. Company 1 is much more efficient and effective at using it's assets to generate profit.",
             "links": []
         },
-        "revenue": {
-            "word": "Revenue",
-            "definition": "The total amount of money that a company brings in before the cost of making that money is taken into account. A company could have made $12 million this quarter in revenue, but if it cost $3 million in raw material and $2 million in advertising to generate that revenue, then the company will only bring in $7 million in profit (a.k.a gross profit on the income statement).",
-            "links": []
+
+        "sharesoutstanding": {
+          "word": "Shares Outstanding",
+          "definition":  "All of the shares of the company. This includes shares owned by the general public/investors and restricted stock owned by company officers and management.",
+          "links": [
+            {
+              "title": "Investopedia - Shares Outstanding",
+              "link": "https://www.investopedia.com/terms/o/outstandingshares.asp"
+            },
+            {
+              "title": "Investopedia - Outstanding Vs Floating Stock: What's the Difference?",
+              "link": "https://www.investopedia.com/ask/answers/062315/what-difference-between-shares-outstanding-and-floating-stock.asp"
+            }
+          ]
         }
     }
 }
