@@ -3,7 +3,7 @@
 import React, {Component} from 'react';
 
 const MASS = 25;
-const G = 9.8;
+const G = 9.81;
 
 class Canvas extends Component {
 
@@ -20,6 +20,8 @@ class Canvas extends Component {
       init_x_vel: 0,
       init_y_vel: 0,
       total_vel: 0,
+      max_y_height: 0,
+      max_y_height_x_pos: 0,
       kinetic_energy: 0
     };
 
@@ -28,6 +30,8 @@ class Canvas extends Component {
     this.handleResetButtonClick = this.handleResetButtonClick.bind(this);
     this.paintGrid = this.paintGrid.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+
+    this.ex = 0;
 
   }
 
@@ -43,6 +47,7 @@ class Canvas extends Component {
           <p>V<sub>x</sub>: {this.state.x_vel}</p>
           <p>V<sub>y</sub>: {this.state.y_vel}</p>
           <p>V<sub>total</sub>: {this.state.total_vel}</p>
+          <p>time: {this.state.t}</p>
           <p>KE: {this.state.kinetic_energy}</p>
 
           <button onClick={this.handlePauseButtonClick}>Pause</button>
@@ -52,7 +57,7 @@ class Canvas extends Component {
             <input type="text" name="vx_init" /><br/>
             <label htmlFor="vy_init" >Initial Y Velocity: </label>
             <input type="text" name="vy_init" />
-            <input type="submit" onClick={this.handleGoButtonClick} />
+            <input type="submit" onClick={this.handleGoButtonClick} value="Simulate"/>
           </form>
       </div>
     );
@@ -78,11 +83,12 @@ class Canvas extends Component {
 
       let prevXPos = this.state.x;
       let prevYPos = this.state.y;
+
       //update state
       this.setState(prevState => {
         return {
           ...prevState,
-          t: prevState.t + 0.05,
+          t: prevState.t + 0.01,
           y: (0.5*G*(prevState.t*prevState.t) - ((this.state.init_y_vel)*prevState.t) + this._canvas.height),
           x: prevState.t*(this.state.init_x_vel)
         };
@@ -93,12 +99,25 @@ class Canvas extends Component {
         return {
           ...prevState,
           intervalID: IntervalID,
-          x_vel: (this.state.x - prevXPos)/0.05,
-          y_vel: (-0.1)*(this.state.y - prevYPos)/0.05,
+          x_vel: (this.state.x - prevXPos)/0.01,
+          y_vel: (-0.1)*(this.state.y - prevYPos)/0.01,
           total_vel: (Math.sqrt((this.state.x_vel*this.state.x_vel)+(this.state.y_vel*this.state.y_vel))),
+          max_y_height: Math.max((this._canvas.height-this.state.y), (prevState.max_y_height)),
           kinetic_energy: (0.5*MASS*this.state.total_vel*this.state.total_vel)
         };
       });
+
+      // grab the X-position of the highest point
+      if (this.state.y_vel < 0 && this.state.max_y_height_x_pos==0) {
+        this.setState(prevState => {
+          return {
+            ...prevState,
+            max_y_height_x_pos: this.state.x
+          }
+        });
+
+        console.log(this.state.max_y_height_x_pos);
+      }
 
       this.ctx.beginPath();
       this.ctx.arc(this.state.x, this.state.y, 1, 0, 2*Math.PI);
@@ -106,7 +125,26 @@ class Canvas extends Component {
       this.ctx.fill();
       this.ctx.closePath();
 
-    }, 10);
+      // check if ball is back on the ground
+      if (this._canvas.height-this.state.y < 0.001 && (this._canvas.height-this.state.y != 0)) {
+
+        clearInterval(this.state.intervalID);
+
+        console.log(this.state.max_y_height);
+
+        // write out the max height on the screen
+        this.ctx.font = '12px serif';
+        this.ctx.strokeStyle = "red";
+        this.ctx.strokeText("Max Height: (" + this.state.max_y_height_x_pos + "," + this.state.max_y_height + ")", this.state.max_y_height_x_pos, this._canvas.height-this.state.max_y_height-20);
+
+        this.ctx.beginPath();
+        this.ctx.arc(this.state.max_y_height_x_pos, this._canvas.height-this.state.max_y_height, 5, 0, 2*Math.PI);
+        this.ctx.fillStyle = "red";
+        this.ctx.fill();
+        this.ctx.closePath();
+      }
+
+    }, 4);
 
 
   }
@@ -131,8 +169,10 @@ class Canvas extends Component {
         x_vel: 0,
         y_vel: 0,
         init_x_vel: 0,
-        init_x_vel: 0,
+        init_y_vel: 0,
         total_vel: 0,
+        max_y_height: 0,
+        max_y_height_x_pos: 0,
         kinetic_energy: 0
       };
     });
@@ -151,6 +191,13 @@ class Canvas extends Component {
       this.ctx.strokeStyle = "white";
       this.ctx.stroke();
       this.ctx.closePath();
+
+      if(i%100 == 0) {
+        // label the graph
+        this.ctx.font = '12px serif';
+        this.ctx.strokeStyle = "black";
+        this.ctx.strokeText(i, i, this._canvas.height);
+      }
     }
 
     // paint Y grid
@@ -162,6 +209,13 @@ class Canvas extends Component {
       this.ctx.strokeStyle = "white";
       this.ctx.stroke();
       this.ctx.closePath();
+
+      if(i%100 == 0) {
+        // label the graph
+        this.ctx.font = '12px serif';
+        this.ctx.strokeStyle = "black";
+        this.ctx.strokeText(640-i, 0, i);
+      }
     }
 
   }
