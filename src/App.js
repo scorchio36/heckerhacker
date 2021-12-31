@@ -18,6 +18,7 @@ import Neurology from './info/Neurology';
 import FundamentalAnalysis from './info/FundamentalAnalysis';
 import Robotics from './info/Robotics';
 import Home from './Home';
+import ProjectileMotionSimContainer from './tools/physics/kinematics/ProjectileMotionSimContainer'
 const SIDEMENU_OFFSCREEN_OFFSET = "-290px"; // How many pixels until the sidemenu is completely off-screen (may need to be adjusted for different devices)
 
 /* Main container for the whole application. All components in my project will be children of App
@@ -51,6 +52,7 @@ class App extends Component {
               <Route path="/fundamental_analysis" component={ FundamentalAnalysis } />
               <Route path="/music_production" component={ MusicProd } />
               <Route path="/neurology" component={ Neurology } />
+              <Route path="/tools/physics/kinematics/projectile_motion_sim" component={ProjectileMotionSimContainer} />
               <Route path="/quantum_mechanics" component={ QuantMech } />
               <Route path="/robotics" component={Robotics} />
             </div>

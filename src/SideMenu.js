@@ -20,6 +20,7 @@ class SideMenu extends Component {
           <NavLink to="/music_production" onClick={this.props.hamburgercallback}><li>Electronic Music Production</li></NavLink>
           <NavLink to="/neurology" onClick={this.props.hamburgercallback}><li>Neurology</li></NavLink>
           <NavLink to="/robotics" onClick={this.props.hamburgercallback}><li>Robotics</li></NavLink>
+          <NavLink to="/tools/physics/kinematics/projectile_motion_sim" onClick={this.props.hamburgercallback}><li>Projectile Motion Sim</li></NavLink>
         </ul>
       </div>
     );

@@ -60,3 +60,9 @@ will be rendered with default HTML layout. */
     flex: none;
   }
 }
+
+#myCanvas {
+  background: #eee;
+  display: block;
+  margin: 0 auto;
+}

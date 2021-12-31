@@ -1,6 +1,31 @@
 {
   "terms":
     {
+
+        "actuator": {
+            "word": "Actuator",
+            "definition": "Any device or machine that is used to deliver force or torque for the purpose of moving the links that comprise a mechanism.",
+            "links": []
+        },
+
+        "configuration": {
+            "word": "Configuration",
+            "definition": "The current orientation and position of a rigid body. It is described by a set of real numbers. For example, the configuration of an object fixed to a plane (2D space), can be described by a minimum of three real independent variables: X and Y for position and theta for its angular orientation. The degrees of freedom is the smallest number of independent variables you need to describe a link's current configuration.",
+            "links": []
+        },
+
+        "configurationspace": {
+            "word": "Configuration Space (C-Space)",
+            "definition": "The current configuration of a rigid body is described by a set of real numbers or independent variables. Each independent variable provides a whole range of values that the rigid body can take on. This means that there is a whole range of configurations available to the rigid body. The range/space that all of these possible configurations trace out is known as the Configuration Space, or the C-Space. Every individual configuration is a point within this C-Space. We can take a door as an example. The door is a link connected to the wall, the ground link. They are connected to each other through the door hinge, which is a revolute joint. This joint places a constraint on the door so that it can only move at an angle relative to the wall. We only need a single real number, the door's angle with respect to the wall, to describe the current configuration of the door. Let's say that the wall is parallel with the doorway. This would mean the door can open a full 180 degrees before hitting the wall. The semicircle traced out by the door contains all possible configurations for the door and is thus our configuration space. Every point making up the semicircle is a different configuration for the door.",
+            "links": []
+        },
+
+        "constraint": {
+            "word": "Constraint",
+            "definition": "Constraints seek to limit the motion of an object by eliminating dimensions upon which an object can freely move. The more constraints you place on an object, the less degrees of freedom you have.",
+            "links": []
+        },
+
         "cylindricaljoint": {
             "word": "Cylindrical (C) Joint",
             "definition": "A lower kinematic pair that constrains the motion of a link in 3D space. A rigid body has 6 degrees of freedom in 3D space. This joint places 4 constraints on one of the links with respect to the ground link, allowing only movement in one linear dimension and one angular dimension. The link can move in a linear fashion in parallel with the same axis that it rotates about for its one-dimensional angular motion. This joint allows for 2 D.O.F.",
@@ -22,7 +47,7 @@
 
         "degreesoffreedom": {
             "word": "Degrees of Freedom (D.O.F.)",
-            "definition": "The number of independent variables that are needed to fully describe the position of a mechanism in space. This is also the dimension of the configuration space.",
+            "definition": "The number of independent variables that are needed to fully describe the position of a link or mechanism in space. This is also the dimension of the configuration space. You can calculate the D.O.F. First, take the number of freedoms per body (3 for 2D, 6 for 3D - don't consider ground link) and add them all up for all bodies. Take this sum and subtract from that the number of independent constraints on each body. Take one link attached to a ground link through a revolute joint. The non-ground link has 5 independent constraints placed on it due to the revolute joint. The non-ground link has 6 degrees of freedom in 3D space. 6-5 = 1 degree of freedom for this mechanism.",
             "links": [
               {
                 "title": "Lesics - Understanding Degrees of Freedom",
@@ -39,6 +64,23 @@
               {
                 "title": "Kinematics - The Design of Mechanisms: Degrees of Freedom",
                 "link": "https://www.brighthubengineering.com/machine-design/6634-kinematics-design-of-mechanisms-degrees-of-freedom/"
+              }
+            ]
+        },
+
+        "endeffector": {
+            "word": "End-Effector",
+            "definition": "A device, like a gripping hand, that is used by the robot to manipulate and move objects in its surroundings.",
+            "links": []
+        },
+
+        "grublersformula": {
+            "word": "Grublers Formula",
+            "definition": "An expression to determine the D.O.F. for a mechanism made up of links and joints. The formula is [DoF = m(N-1-J) + (sum of F_i {i goes from 1 to J})]. Here are what the variables represent: [m=freedoms of a rigid body (3 in 2D, 6 in 3D), N=number of links, including ground link, J=number of joints, F_i=number of freedoms given by a joint]. Everything is pretty self-explanatory except for the F_i. Instead of thinking of joints adding constraints and removing freedoms, you can also think of them as giving freedoms. A revolute joint, for example, provides 5 constraints, but also provides 1 freedom. A universal joint provides 4 constaints, but also 2 freedoms. You sum the number of freedoms given by a joint and add that to the first expression in Grubler's formula.",
+            "links": [
+              {
+                "title": "Northwestern Robotics - Degrees of Freedom of a Robot",
+                "link": "https://www.youtube.com/watch?v=zI64DyaRUvQ&list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx&index=5&ab_channel=NorthwesternRobotics"
               }
             ]
         },
@@ -92,8 +134,19 @@
 
         "link": {
             "word": "Link",
-            "definition": "A rigid physical body with a certain number of degrees of freedom, depending on the dimension of the space that the rigid body is contained to. For example, a rigid body constrained to move only in a plane has 3 degrees of freedom: 2 variables for position and one for orientation (angular position). In 3D, a link has 6 degrees of freedom: 3 for position and 3 for orientation. This can actually continue into an arbitrary number of dimensions, with a link in 4D space having 10 degrees of freedom. Links are the rigid components that form joints with each other to eventually build up a complete mechanism.",
+            "definition": "A rigid physical body with a certain number of degrees of freedom, depending on the dimension of the space that the rigid body is contained to. For example, a rigid body constrained to move only in a plane has 3 degrees of freedom: 2 variables for position and one for orientation (angular position). In 3D, a link has 6 degrees of freedom: 3 for position and 3 for orientation. This can actually continue into an arbitrary number of dimensions, with a link in 4D space having 10 degrees of freedom: 4 variables for position and 6 for angular orientation. Links are the rigid components that form joints with each other to eventually build up a complete mechanism.",
             "links": []
+        },
+
+        "lowerpair": {
+            "word": "Lower Pair",
+            "definition": "A type of kinematic pair in which two links form a strong joint and are 'locked' with each other. The joints between the links place well-established constraints upon the links. The basic joints like revolute, prismatic, helical, cylindrical, universal, and spherical fall under this category.",
+            "links": [
+              {
+                "title": "Wikipedia - Kinematic Pair",
+                "link": "https://en.wikipedia.org/wiki/Kinematic_pair"
+              }
+            ]
         },
 
         "mechanism": {
@@ -138,6 +191,12 @@
                 "link": "https://de.maplesoft.com/support/help/content/12673/image55.png"
               }
             ]
+        },
+
+        "rigidbody": {
+            "word": "Rigid Body",
+            "definition": "Any physical object in which three points (if you're in 3D space) within the object are a constant distance away from each other. Take a regular wooden block. The distance between 3 of the corners on the block cannot change. They are constant with each other. You can use this characteristic of a rigid body to determine that an object will have 6 degrees of freedom in 3D space. Let's assign letters, A, B, and C to 3 different corners of the wooden block. First place A at any place within 3D space. You need 3 real numbers to specify the location of A (x, y, and z). Corner B is a constant distance away from A. This constant radius traces out the surface of a sphere in 3D space. Any position on the sphere surface can be described by 2 real numbers, like lattitude and longitude. The 3 real numbers of A and 2 real numbers of B now brings us to a total of 5 independent variables used to describe the configuration of our wooden block rigid body. Finally, point C is a constant distance from point A and point B. A, B, and C form a 2D triangle in space. You can visualize the triangle side formed by C and B rotating about the axis parallel with the triangle side formed by A and B (the full rotation would trace out a cone in 3D space). Point C will trace out a circle in 3D space as it moves around B, constrained by A and B. A point on a circle can be described by a single real number, which brings our total up to 6 independent variables to describe the configuration of a rigid body in 3D space. Any attempt to continue adding more points (point D, E, etc) would be redundant as each point would add no new dimensional information. Rigid bodies will also be called links within the context of a robotic mechanism.",
+            "links": []
         },
 
         "servo": {
