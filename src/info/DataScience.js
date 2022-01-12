@@ -25,6 +25,13 @@ class DataScience extends Component {
             {this.state.definitionComponents}
           </ul>
         </div>
+
+        <div>
+          <h2>Notes</h2>
+          <ul>
+            <li><a href="https://www.quora.com/Is-cost-loss-function-calculated-for-each-training-example-and-then-update-weights-or-is-it-calculated-as-average-over-the-whole-dataset-or-batch-and-then-the-weights-are-updated">Great explanation of different Gradient Descent Algorithms</a></li>
+          </ul>
+        </div>
       </div>
     );
   }

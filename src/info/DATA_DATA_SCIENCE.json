@@ -20,6 +20,12 @@
             ]
         },
 
+        "overfitting": {
+            "word": "Overfitting",
+            "definition": "Some models are so complex that they can learn pick up on little nuances in the data that you use to train them. These nuances are things within the data that we don't want the model to pick up on, like noise. We don't want the model to learn these nuances because they don't generalize well when we put the model out in the real world. Or learning these little quirks in the data wasn't even in the scope of our goals to begin with. Essentially, the model is learning the training data a little 'too' well. When a model overfits, it means that it has learned to predict the labeled training data with very high accuracy, but it will not perform well on test data or new real world data it hasn't seen before. A less-than-stellar analogy would be to imagine that you have a chemistry trivia game, where there are flash cards with different questions and answers. After playing the game so many times, eventually you learn all of the answers to all of the questions by memory. You never concern yourself to look up why those answers are the answers. You simply memorize the answers to each card. Now you will be unstoppable at this game. But the knowledge you learned will not generalize well. You may have memorized all of the answers to the board game, but you have no knowledge in the field of chemistry and will be unable to answer new questions about chemistry. In this case you would be the model. You trained yourself on the chemistry board game trivia questions - the training data. If the task was to become really good at the board game then you nailed it. But if the task was to learn chemistry, then you are overfitting on the training data. You will not do well on new chemistry questions - test data. Some common ways to combat overfitting is to reduce the complexity of your model, gather more training data, or clean up your training data to reduce irrelevant noise.",
+            "links": []
+        },
+
         "pandas": {
             "word": "Pandas",
             "definition": "A python library that is based all around data analysis. Pandas helps you read, analyze, visualize, and even clean up your data. The workhorse of this library is the DataFrame object. It is a very fancy tabular data structure with an extensive set of functions that help you achieve the aforementioned capabilities of the library. The DataFrame also integrates very nicely with Matplotlib.",
@@ -33,6 +39,12 @@
                 "link": "https://pandas.pydata.org/pandas-docs/stable/"
               }
             ]
+        },
+
+        "regularization": {
+            "word": "Regularization",
+            "definition": "Any techniques used to decrease the complexity of a model in an attempt to combat overfitting.",
+            "links": []
         },
 
         "vectorization": {

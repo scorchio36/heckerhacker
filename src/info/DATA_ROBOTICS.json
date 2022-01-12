@@ -22,8 +22,13 @@
 
         "constraint": {
             "word": "Constraint",
-            "definition": "Constraints seek to limit the motion of an object by eliminating dimensions upon which an object can freely move. The more constraints you place on an object, the less degrees of freedom you have.",
-            "links": []
+            "definition": "A cosntraint is a restriction placed on the motion of an object within free space. Constraints seek to limit the motion of an object by eliminating dimensions upon which an object can freely move. The more constraints you place on an object, the less degrees of freedom you have.",
+            "links": [
+              {
+                "title": "Youtube - Physics Constraints in Games Part 1 - Constraint Basics",
+                "link": "https://www.youtube.com/watch?v=MTVdBgQY9LY&ab_channel=Ming-LunChou"
+              }
+            ]
         },
 
         "cylindricaljoint": {
@@ -74,6 +79,12 @@
             "links": []
         },
 
+        "explicitparametrization": {
+            "word": "Explicit Parametrization",
+            "definition": "Using n parameters to represent an n-dimensional topology or space. Take the surface of a sphere. This is a 2D topology, in which positions on the surface of the sphere can be represented with two numbers, lattitude and longitude. Remember that we are referring to the surface of the sphere here as our topology, which is a curved 2D space. Even though a sphere is a 3D object, its surface, as a topological space, is 2D. This does not mean you can not use more numbers to represent the surface of the sphere. The curved 2D surface of the sphere sits in 3D space. So we can use a standard 3D orthogonal unit vector representation and use x, y, and z to map out points on the surface of the sphere. Using more than n parameters to represent a space is called implicit parametrization.",
+            "links": []
+        },
+
         "grublersformula": {
             "word": "Grublers Formula",
             "definition": "An expression to determine the D.O.F. for a mechanism made up of links and joints. The formula is [DoF = m(N-1-J) + (sum of F_i {i goes from 1 to J})]. Here are what the variables represent: [m=freedoms of a rigid body (3 in 2D, 6 in 3D), N=number of links, including ground link, J=number of joints, F_i=number of freedoms given by a joint]. Everything is pretty self-explanatory except for the F_i. Instead of thinking of joints adding constraints and removing freedoms, you can also think of them as giving freedoms. A revolute joint, for example, provides 5 constraints, but also provides 1 freedom. A universal joint provides 4 constaints, but also 2 freedoms. You sum the number of freedoms given by a joint and add that to the first expression in Grubler's formula.",
@@ -113,6 +124,12 @@
                 "link": "https://en.wikipedia.org/wiki/Kinematic_pair"
               }
             ]
+        },
+
+        "implicitparametrization": {
+            "word": "Implicit Parametrization",
+            "definition": "Using more than n parameters to represent an n-dimensional topology or space. For example, using 3 variables (x,y,z) to represent points on a 2D surface of a sphere. You can think of using (x,y,z) to represent a 2D plane topology space as well. Imagine a 2D plane oriented in 3D space in some manner. You can choose a representation such that points on this 2D planar topology are represented with 3 variables, x, y, and z. Explicit parametrization clearly needs less variables than implicit parametrization. So what is the advantage of using implicit paramatrization and using more variables than necessary to represent a topological space? The biggest advantage is lack of singularties. These are spots in explicit representations where your coordinates/parameters can rapidly 'jump' around even though you are barely moving or stepping through your topological space. The north and south pole within the lattitude and longitude representation of the globe are a good example of this. If you are at the north pole, small steps around the pole can lead to large shifts in the coordinate space. This can cause trouble when trying to derive other values like velocities, which can start to tend to infinity when you are working within that respresentation. Implicit parametrization prevents singularities within your reference frame at the cost of more variables or parameters.",
+            "links": []
         },
 
         "joint": {
@@ -224,6 +241,17 @@
               {
                 "title": "this thing is freaking sick",
                 "link": "https://www.youtube.com/watch?v=AHUv9Zda_48&ab_channel=MDxmedia"
+              }
+            ]
+        },
+
+        "topology": {
+            "word": "Topology",
+            "definition": "The intrinsic 'shape' of a space. It is independent of the representation that we choose to apply. For example, take a circle as our topological space. We can choose to represent a position on the circle with a single value: an angle. Or we can represent the position with two values, a constrained horizontal and vertical position, x and y (x^2 + y^2 = R). Regardless of the representation we choose to view the topological space of the circle in, it is still a circle. Topological spaces are said to be equivalent if you can continuously stretch or deform a topological space into another without cutting or gluing. A sphere could be turned into an ellipsoid with just some stretching so a sphere and an ellipsoid are equivalent topologically. However, a sphere could never be turned into a torus or 2D plane topology without cutting, gluing, and adding discontinuities, so those topologies are not the same. Why do we care about this? The topology and the representation we choose to apply are important because the C-space has a topology. Understanding the topology and choosing the appropriate representation will allow us to work more effectively within the C-space and help us to better understand the possible set of configurations that our robotic mechanism can take on.",
+            "links": [
+              {
+                "title": "Wikipedia - Kinematic Pair",
+                "link": "https://en.wikipedia.org/wiki/Topology"
               }
             ]
         },
