@@ -1,6 +1,32 @@
 {
   "terms":
     {
+        "gan": {
+            "word": "Generative Adversarial Networks (GAN)",
+            "definition": "Not gonna pretend I understand how these work right now. Keeping some links saved here so I can learn more about these networks later.",
+            "links": [
+              {
+                "title": "Generative Adversarial Networks (GANs) | An Introduction",
+                "link": "https://www.geeksforgeeks.org/generative-adversarial-networks-gans-an-introduction/?ref=lbp"
+              }
+            ]
+        },
+
+        "keras": {
+            "word": "Keras",
+            "definition": "A high-level deep learning API that allows engineers and researchers to implement machine learning networks in a quick and simple way. The library allows for simple implementions, but also provides a lot of underlying flexibility for users that want to create more complex and non-linear neural networks. The library uses Tensorflow 2 for back-end data processing. Keras comes with Tensorflow 2, so you can just download Tensorflow 2 to start using Keras.",
+            "links": [
+              {
+                "title": "Keras Developer Guides",
+                "link": "https://keras.io/guides/"
+              },
+              {
+                "title": "Keras API Reference",
+                "link": "https://keras.io/api/"
+              }
+            ]
+        },
+
         "numpy": {
             "word": "Numpy",
             "definition": "Python library for doing scientific computation. It allows for vectorization and promotes using this over typical, single element, for-loop calculations. Numpy is built around the ndarray object, which you can think of as basically a better python array. It provides more functionality and a library of functions that are useful in scientific computing. At it's core, Numpy is a precompiled library of C code that makes calculations faster, more efficient, and more legible.",

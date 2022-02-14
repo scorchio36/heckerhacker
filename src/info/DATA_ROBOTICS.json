@@ -126,6 +126,25 @@
             ]
         },
 
+        "holonomicconstraint": {
+            "word": "Holonomic Constraint",
+            "definition": "Applied constraints on position variables, such that a function of those position variables is always equal to 0. If something is holonomically constrained to move on a path, then it cannot diverge from this path at all. It's like one of those wire bead mazes in doctor's offices. A wooden piece is constrained to move completely along the path of the wire. It cannot diverge. If it can diverge from the path then it is a non-holonomic constrain.",
+            "links": [
+              {
+                "title": "Holonomic vs. Nonholonomic Constraints for Robots | Fundamentals of Robotics | LESSON 4",
+                "link": "https://www.youtube.com/watch?v=PAvj6cP6lOM&list=PLlqdnFs9xNwpD9zJr8BgAbfHH3AyixTqt&index=11&ab_channel=Mecharithm-RoboticsandMechatronics"
+              },
+              {
+                "title": "Stackexchange - What are holonomic constraints?",
+                "link": "https://math.stackexchange.com/questions/3616185/what-are-holonomic-constraints"
+              },
+              {
+                "title": "Wikipedia - Holonomic Constraints",
+                "link": "https://en.wikipedia.org/wiki/Holonomic_constraints"
+              }
+            ]
+        },
+
         "implicitparametrization": {
             "word": "Implicit Parametrization",
             "definition": "Using more than n parameters to represent an n-dimensional topology or space. For example, using 3 variables (x,y,z) to represent points on a 2D surface of a sphere. You can think of using (x,y,z) to represent a 2D plane topology space as well. Imagine a 2D plane oriented in 3D space in some manner. You can choose a representation such that points on this 2D planar topology are represented with 3 variables, x, y, and z. Explicit parametrization clearly needs less variables than implicit parametrization. So what is the advantage of using implicit paramatrization and using more variables than necessary to represent a topological space? The biggest advantage is lack of singularties. These are spots in explicit representations where your coordinates/parameters can rapidly 'jump' around even though you are barely moving or stepping through your topological space. The north and south pole within the lattitude and longitude representation of the globe are a good example of this. If you are at the north pole, small steps around the pole can lead to large shifts in the coordinate space. This can cause trouble when trying to derive other values like velocities, which can start to tend to infinity when you are working within that respresentation. Implicit parametrization prevents singularities within your reference frame at the cost of more variables or parameters.",
@@ -216,10 +235,30 @@
             "links": []
         },
 
+        "screw": {
+            "word": "screw",
+            "definition": "Simple machine with helical ridges that is used to connect and hold two rigid bodies.",
+            "links": [
+              {
+                "title": "SCREWS: HOW THEY’RE CLASSIFIED AND HOW TO KNOW WHAT KIND TO USE",
+                "link": "https://jayconsystems.com/blog/screws-how-theyre-classified-and-how-to-know-what-kind-to-use"
+              }
+            ]
+        },
+
         "servo": {
             "word": "Servo",
             "definition": "A motor that is built to move within a contrained angle. For example, the motor can only move back and forth between 0 and 180 degrees. This motion is achieved by using a regular motor to drive a smart gear box. The gear box will appropriately step down the speed of the motor and only allow motion through the predefined angular range. Servo motors typically have three wires: power, ground, and a control line. Power and ground are there to provide the necessary current needed for operation of the servo. The control signal typically carries PWM signals as an input. The duty cycle of the PWM signal is decoded by the servo and the servo is moved to the appropriate angle corresponding to this decoded duty cycles (e.g. 0% duty cycle = 0 degrees, 100% = 180 degrees). The torque and defined motion of these devices make them very useful in robotics.",
-            "links": []
+            "links": [
+              {
+                "title": "The Secret Life of Servos Playlist",
+                "link": "https://www.youtube.com/watch?v=LwMybZOhtAw&list=PLHj0bn3rsCbROgyLfOHBrLirTMhpUg62o&ab_channel=ServoCity"
+              },
+              {
+                "title": "How to Determine what Torque you need for your Servo Motors.",
+                "link": "https://automaticaddison.com/how-to-determine-what-torque-you-need-for-your-servo-motors/"
+              }
+            ]
         },
 
         "sphericaljoint": {

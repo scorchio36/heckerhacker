@@ -41,7 +41,7 @@ class MusicProd extends Component {
               <li>
                 <h3>Sidechaining: LFO v.s. Compressor</h3>
                 <ul>
-                  <li>In many instances, you can use an LFO/LFO tool for sidechaining or pumping effects. Deadmau5 actually recommends using an LFO in most cases.</li>
+                  <li>In many instances, you can use an LFO tool for sidechaining or pumping effects. Deadmau5 actually recommends using an LFO in most cases.</li>
                   <li>Your goal for pumping or sidechaining is to attenuate the sidechained signal right where the kick hits its greatest peak (You want that kick or snare to cut through as effectively as possible).</li>
                   <li>Electronic drums are (almost always) sampled. Therefore, you will be playing the same sound over and over again throughout the song. If that's the case, you know the drum peak will be in the same spot every time, since the sample and its peaks do not change. So you can use a predictable LFO and adjust it so you get perfect pumping everytime.</li>
                   <li>Now when would you use a compressor for sidechaining/pumping? When you are using real drums or recording instruments.</li>
@@ -59,6 +59,8 @@ class MusicProd extends Component {
                   <li><a href="https://www.meldaproduction.com/">MeldaProductions Suite of Tools</a></li>
                   <li><a href="http://bram.smartelectronix.com/plugins.php?id=4">s(M)exoscope by SmartElectronix</a></li>
                   <li><a href="https://michaelwillis.github.io/dragonfly-reverb/manuals.html">Dragonfly Reverb</a></li>
+                  <li><a href="https://plugins4free.com/plugin/2777/">Transpire - Transient Processor</a></li>
+                  <li><a href="https://www.plogue.com/products/alter-ego.html">Alter/Ego</a></li>
                 </ul>
               </li>
               <li>
@@ -107,6 +109,9 @@ class MusicProd extends Component {
                     <ul>
                       <li><a href="https://www.youtube.com/watch?v=l3MfluPFbzM&t=1234s&ab_channel=wickiemedia">Wikiemedia - Mix Like a Pro - 12 Track Song</a></li>
                       <li><a href="https://www.youtube.com/watch?v=YEorsfZe4vU&list=RDCMUCchjpg1aaY91WubqAYRcNsg&start_radio=1&rv=YEorsfZe4vU&t=1&ab_channel=wickiemedia">Wikiemedia - Basic Mixing Theory #1</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=JPp3i_0xlCk&t=687s&ab_channel=Severman">Severman - How To Mix & Master EDM Like A Pro</a></li>
+                      <li><a href="http://prosoundformula.com/the-5-drivers-of-mixing/">Rob Williams - The 5 Drivers of Mixing</a> <p> I follow these 5 drivers a checklist during mixing. </p></li>
+                      <li><a href="https://www.youtube.com/watch?v=dO1OOzfGmLQ&t=2500s&ab_channel=MusicianonaMission">MusicianOnAMission - 21 mixing tips that would have saved me years</a></li>
                     </ul>
                   </li>
                 </ul>

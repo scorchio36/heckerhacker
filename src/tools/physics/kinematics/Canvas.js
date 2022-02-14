@@ -45,13 +45,13 @@ class Canvas extends Component {
           (el) => this._canvas = el
           }/>
 
-          <p>X-position: {this.state.x}</p>
-          <p>Y-position: {640 - this.state.y}</p>
-          <p>V<sub>x</sub>: {this.state.x_vel}</p>
-          <p>V<sub>y</sub>: {this.state.y_vel}</p>
-          <p>V<sub>total</sub>: {this.state.total_vel}</p>
-          <p>time: {this.state.t}</p>
-          <p>KE: {this.state.kinetic_energy}</p>
+          <p>X-position: {(this.state.x).toFixed(3)}</p>
+          <p>Y-position: {(640 - this.state.y).toFixed(3)}</p>
+          <p>V<sub>x</sub>: {(this.state.x_vel).toFixed(3)}</p>
+          <p>V<sub>y</sub>: {(this.state.y_vel).toFixed(3)}</p>
+          <p>V<sub>total</sub>: {(this.state.total_vel).toFixed(3)}</p>
+          <p>time: {(this.state.t).toFixed(3)}</p>
+          <p>KE: {(this.state.kinetic_energy).toFixed(3)}</p>
 
           <button onClick={this.handlePauseButtonClick}>Pause</button>
           <button onClick={this.handleResetButtonClick}>Reset</button>
@@ -149,16 +149,25 @@ class Canvas extends Component {
         // write out the max height on the screen
         this.ctx.font = '12px serif';
         this.ctx.strokeStyle = "red";
-        this.ctx.strokeText("Max Height: (" + this.state.max_y_height_x_pos + "," + this.state.max_y_height + ")", this.state.max_y_height_x_pos, this._canvas.height-this.state.max_y_height-20);
+        this.ctx.strokeText("Max Height: (" + (this.state.max_y_height_x_pos).toFixed(3) + "," + (this.state.max_y_height).toFixed(3) + ")", this.state.max_y_height_x_pos, this._canvas.height-this.state.max_y_height-20);
 
         this.ctx.beginPath();
         this.ctx.arc(this.state.max_y_height_x_pos, this._canvas.height-this.state.max_y_height, 5, 0, 2*Math.PI);
         this.ctx.fillStyle = "red";
         this.ctx.fill();
         this.ctx.closePath();
+
+        // Y position will be some small decimal position off from 0 due to how the calculations are done. Just round to 0 to make it look nice.
+        this.setState(prevState => {
+          return {
+            ...prevState,
+            y: Math.round(this.state.y)
+          }
+        });
+
       }
 
-    }, 4);
+    }, 4); // canvas should re-update every 4ms (this is the fastest refresh rate for setInterval)
 
 
   }
