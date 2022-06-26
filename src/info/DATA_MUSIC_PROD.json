@@ -11,10 +11,28 @@
             }
           ]
       },
+      "audiointerface": {
+          "word": "Audio Interface",
+          "definition": "A piece of hardware that acts as an 'in-between' for the digital and analog sides of your sound production setup. Your computer lives in sample land. It operates strictly on digital files and formats. The real world is analog. Guitars, microphones, drums, etc all produce analog signals. These real-world analog signals need to be turned into digital signals in order for your computer to operate on them. Some computer motherboards have some audio hardware built-in, but it's typically not going to be enough if you seriously want to produce and record music. A motherboard will lack many of the interfaces/ports you may need and the DAC/ADCs may not be as good as the ones dedicated to audio measurement and production. That's where an audio interface comes in. Audio interfaces allow for analog instruments and transducers like microphones to be plugged in. They have a variety of options like TS, TRS, and XLR for receiving input. They should also offer things like pre-amplification and phantom power. Audio interfaces also have outputs, which can connect to speakers and headphones. Audio interfaces will take analog-signals from the real world, convert them to digital with a high-quality ADC (Analog to Digital Converter). The reverse is also true. They also take the digital signals from the computer and use a DAC (Digital to Analog Converter) and send analog signals out to drive speakers and headphones.",
+          "links": [
+            {
+              "title": "Focusrite Scarlett Solo 3rd Gen - REVIEW",
+              "link": "https://www.youtube.com/watch?v=VSgzF79ivd0&t=288s&ab_channel=JulianKrause"
+            },
+            {
+              "title": "How to choose the best audio Interface for home studio recording",
+              "link": "https://www.youtube.com/watch?v=7QOXjfB1ExM&ab_channel=PeteJohns-StudioLiveToday"
+            }
+          ]
+      },
       "compressor": {
           "word": "Compressor",
           "definition": "Compressors are tools that control the dynamics of a sound or mix. The main reason you use them is to squash down transients so you have more control over your audio levels. Sounds can be unruly and inconsistent. For a lot of audio sources, like vocals, there is a large disparity between the loudest and quietest sounds that a singer produces (the difference in dB between the loudest and quietest levels in a mix is called the Dynamic Range). This can lead to an inconsistent feeling from a mix or sound. It also causes a problem of balancing. The quiet sounds may be too hard to hear, but turning up the whole track can make your loudest sounds clip. The compressor is a good tool for this. It has two main controls that can be adjusted: the threshold and the ratio. The threshold is set at a certain dB level. If any portion of a sound goes above this dB level, then the compressor will kick in and attenuate the portion of the sound that exceeds the threshold. But how do you control how much the sound gets attenuated? Through the ratio parameter. The ratio is an X:1 ratio where X determines how many decibels of attenuation a signal experiences per dB of signal that crosses the threshold. For example, if my ratio is 4:1 and my threshold is -14dB, every 4dB that crosses the -14dB threshold is squashed down to 1dB. If I have a -10dB signal pumping through this compressor, it will be squashed down to -13dB. A -6dB signal would be attenuated to -12dB. There are two other parameters that are worth mentioning. The attack and release levels. These are set in milliseconds. They are used to tell the compressor how much time it should wait before kicking in or cutting out. When a signal crosses the threshold parameter, the attack is the amount of time the compressor should wait before it starts attenuating the signal. When a signal drops back below the threshold level, the release is the amount of time the compressor should keep attenuating the signal before it shuts off again. Compressors are used for dynamic control, but they are also appreciated for the tonal value that they can add to a sound. Each compressor has an intrinsic effect that it applies to a sound through signal processing. Most processors/VSTs do. The effect is different for every compressor. But you can also affect the tone of an incoming signal by adjusting any of the 4 parameters mentioned earlier. The compressors main goal is not to change the tonal value of your signal, so these sound changes are subtle. They can change the punch of a sound, make a sound more thick or thin. They can be applied to a whole bus or mix to 'glue' sounds together.",
           "links": [
+            {
+              "title": "FL STUDIO | Mixing Basics - Compression",
+              "link": "https://www.youtube.com/watch?v=gJUmUd4FfeM&list=PLkYsB0Ki9lAdIaYCpB0B0uVTZMZBt9NdX&index=3&ab_channel=FLSTUDIObyImage-LineSoftware"
+            },
             {
               "title": "Wikiemedia - Dynamics Playlist (Youtube)",
               "link": "https://www.youtube.com/watch?v=NVxbx3ixLYA&list=PLB116FE339C48F0A1&ab_channel=wickiemedia"
@@ -29,13 +47,43 @@
             }
           ]
       },
+      "condensormic": {
+          "word": "Condensor Microphone",
+          "definition": "Condensor mics uses a capacitor to measure sound. One plate is anchored while the other is allowed to move based on the sound waves that hit it. The varying distances between the plates create varying voltages. Condensors can pick up much more detail than dynamic mics and they typically have a much flatter frequency response, especially at higher frequencies. Take care as some condensor mics can start distorting if the sound source is getting too loud. Typically, you'd want to switch to a dynamic mic in that situation. Condensor mics also require an external power source, usually called 'phantom power'. The required voltage can range anywhere form 40V to 80V. A common phantom power is 48V.",
+          "links": [
+            {
+              "title": "Audio Recording Tutorial - Comparing microphone types",
+              "link": "https://www.youtube.com/watch?v=2edewYkE_f0&ab_channel=LinkedInLearning"
+            },
+            {
+              "title": "Roswell Pro Audio - How Condenser Mics Work",
+              "link": "https://www.youtube.com/watch?v=pD-zqqgLjJA&ab_channel=RoswellProAudio"
+            },
+            {
+              "title": "Edward Smith - Best BUDGET Microphones For Vocals (2022) ",
+              "link": "https://www.youtube.com/watch?v=BUa2GttUfbs&t=220s&ab_channel=EdwardSmith"
+            }
+          ]
+      },
       "daw": {
           "word": "Digital Audio Workstation (DAW)",
-          "definition": "A computer application with features that allow you to create, edit, and publish music digitally. This is where you will do all of your work when creating a song. They generally come with built in tools (called stock plugins) like compressors, equalizers, synths, etc. But they also have options for you to import 3rd part VSTs. I currently use LMMS (link attached). Different DAWs will have some variation in what stock plugins they offer, the workflow, whether you can edit vocals, etc, but ultimately, most DAWs can do whatever other DAWs can do as well. Some examples of other DAWs are FL Studio, Logic Pro, and Ableton.",
+          "definition": "A computer application with features that allow you to create, edit, and publish music digitally. This is where you will do all of your work when creating a song. They generally come with built in tools (called stock plugins) like compressors, equalizers, synths, etc. But they also have options for you to import 3rd party VSTs. Different DAWs will have some variation in what stock plugins they offer, the workflow, whether you can edit vocals, etc, but ultimately, most DAWs can do whatever other DAWs can do as well. Some examples of DAWs include FL Studio, LMMS, Logic Pro, and Ableton.",
           "links": [
             {
               "title": "LMMS",
               "link": "https://lmms.io/"
+            },
+            {
+              "title": "FL Studio",
+              "link": "https://www.image-line.com/fl-studio/"
+            },
+            {
+              "title": "Ableton",
+              "link": "https://www.ableton.com/"
+            },
+            {
+              "title": "Logic Pro",
+              "link": "https://www.apple.com/logic-pro/"
             }
           ]
       },
@@ -50,6 +98,20 @@
             {
               "title": "A Complete Guide to Gain Staging (your questions answered)",
               "link": "https://www.youtube.com/watch?v=Tq5lDHCKt84&ab_channel=MusicianonaMission"
+            }
+          ]
+      },
+      "dynamicmic": {
+          "word": "Dynamic Microphone",
+          "definition": "Dynamic microphones are robust mics that are better for recording louder sounds and live performances. The microphone has a diaphragm connected to a coil of wire. The pressure generated by sound waves moves the diaphragm and thereby the wire up and down. The coil is centered around a permanent magnet that generates a voltage within the coil of wire based on how quickly and loudly the diaphragm is displaced. These mics are considered 'heavy', so it takes a lot of energy to move that diaphragm up and down. That's typically why they are used for louder recordings.",
+          "links": [
+            {
+              "title": "Audio Recording Tutorial - Comparing microphone types",
+              "link": "https://www.youtube.com/watch?v=2edewYkE_f0&ab_channel=LinkedInLearning"
+            },
+            {
+              "title": "Roswell Pro Audio - How Dynamic Mics Work",
+              "link": "https://www.youtube.com/watch?v=PFgUoGJ7YbA&ab_channel=RoswellProAudio"
             }
           ]
       },
@@ -71,6 +133,10 @@
           "word": "Equalizer (EQ)",
           "definition": "Equalizers give you fine control over the frequency content of a track or sound. It is a collection of low pass, high pass, band pass, and band stop, and shelf filters that are used to boost or cut any portion of the frequency spectrum. This can be used for four main reasons. To clean up crappy parts of a recording/sample, to accentuate the nice parts of a sound, to create space for other elements in a mix, or to just change the sound/timbre of an instrument.",
           "links": [
+            {
+              "title": "FL STUDIO | Mixing Basics - Equalization",
+              "link": "https://www.youtube.com/watch?v=lNKVYFzbzOc&list=PLkYsB0Ki9lAdIaYCpB0B0uVTZMZBt9NdX&index=2&ab_channel=FLSTUDIObyImage-LineSoftware"
+            },
             {
               "title": "How to Use EQ: 10 Amazing Tips for a Professional Mix",
               "link": "https://www.musicianonamission.com/approach-equalization-two-types-eq/"
@@ -135,6 +201,17 @@
           ]
       },
 
+      "haaseffect": {
+          "word": "Haas Effect",
+          "definition": "The Haas Effect is artifical perceived directionality of a sound within a stereofield created by delaying the same sound on the left and right stereo channels. You can make a person detect a sounds as coming from the right or left by messing around with the timing of the same sound on both channels. Note that this is different from panning. Panning affects the dB of the same sound on the left or right stereo channels. Haas effect is related to the timing of the same sound on either channel, rather than the level.",
+          "links": [
+            {
+              "title": "Sage Audio - How to Use the Haas Effect",
+              "link": "https://www.sageaudio.com/blog/pre-mastering/use-haas-effect.php"
+            }
+          ]
+      },
+
       "layering": {
             "word": "Layering",
             "definition": "Stacking and combining different sounds on top of each other in order to create a more interesting, fuller, and cohesive sound.",
@@ -186,7 +263,12 @@
         "pan": {
               "word": "Pan",
               "definition": "Knob used to control where a track sits in the stereoscopic field. By default, sounds will be directly in front of you in the middle of the stereo view. You can pan right or left by a percentage from -100% to 100% to change how much the 'instrument' will sit to the left or right relative to the listener. Don't be afraid to add some automation to panning. A good way to add life and keep your song from getting boring is to play around with where your instruments sit during bigger parts of the song.",
-              "links": []
+              "links": [
+                {
+                  "title": "FL STUDIO | Mixing Basics - Stereo Field",
+                  "link": "https://www.youtube.com/watch?v=UWW-ppRjmCQ&list=PLkYsB0Ki9lAdIaYCpB0B0uVTZMZBt9NdX&index=4&ab_channel=FLSTUDIObyImage-LineSoftware"
+                }
+              ]
         },
 
         "pitchbending": {
@@ -225,8 +307,26 @@
             {
               "title": "How to Use Reverb Like a Pro - 3 Simple Tips for 3D Mixes",
               "link": "https://www.musicianonamission.com/how-to-use-reverb/"
+            },
+            {
+              "title": "FL STUDIO | Mixing Basics - Reverbs",
+              "link": "https://www.youtube.com/watch?v=hFRwk1LOdBU&list=PLkYsB0Ki9lAdIaYCpB0B0uVTZMZBt9NdX&index=6&ab_channel=FLSTUDIObyImage-LineSoftware"
             }
           ]
+        },
+        "ribbonmic": {
+            "word": "Ribbon Microphone",
+            "definition": "Ribbon microphones are similar to dynamic mics in the method of recording. There is a diaphragm that sits within a magnetic field. The magnetic field induces voltages according to how the diaphragm moves. However, in this case, the diaphragm is a long and thin metcallic ribbon that sits within the magnetic field. The vibration of this ribbon within the magnetic field induces changes in voltage within the ribbon circuit, allowing us to record sound. The ribbons are very low mass systems and can vibrate along with high frequency sources. This means they have wider and flatter frequency responses that dynamic mics do. There are some downsides to these mics. They are excellent at picking up minute details, but their outputs are very limited. You typically need some sort of transformer or large-gain pre-amplifier to use these mics. Due to the fragility of the ribbon, this mic is also not very durable. A loud sound or physical impact can break this ribbon and ruin the microphone.",
+            "links": [
+              {
+                "title": "Audio Recording Tutorial - Comparing microphone types",
+                "link": "https://www.youtube.com/watch?v=2edewYkE_f0&ab_channel=LinkedInLearning"
+              },
+              {
+                "title": "Roswell Pro Audio - How Ribbon Mics Work",
+                "link": "https://www.youtube.com/watch?v=BOAh0OVuxSA&ab_channel=RoswellProAudio"
+              }
+            ]
         },
         "staccato" : {
           "word": "Staccato",
@@ -251,6 +351,16 @@
               "link": "https://www.perfectcircuit.com/signal/learn-synthesis"
             }
           ]
+        },
+        "trscable": {
+            "word": "TS/TRS Cable",
+            "definition": "TS cables are unbalanced cables that are used to carry sound signals.",
+            "links": [
+              {
+                "title": "A Complete Guide to Gain Staging",
+                "link": "https://www.youtube.com/watch?v=Tq5lDHCKt84&t=133s&ab_channel=MusicianonaMission"
+              }
+            ]
         },
         "volumeriding": {
             "word": "Volume/Fader Riding",
@@ -277,6 +387,20 @@
               {
                 "title": "A Complete Guide to Gain Staging",
                 "link": "https://www.youtube.com/watch?v=Tq5lDHCKt84&t=133s&ab_channel=MusicianonaMission"
+              }
+            ]
+        },
+        "xlrcable": {
+            "word": "XLR Cable",
+            "definition": "These cables carry sound data and are known for being high-quality and noise resistant. XLR cables are balanced. This means they have 2 separate lines for carrying the sound signal. One carries the normal signal, and the other line carries an inverted version of the sounds signal. On the other end, the audio receiver will flip the inverted signal back, add it to the regular signal, and divide by 2. All of this is done to prevent noise. Electromagnetic interference will induce noise within both the regular and inverted lines. This noise will be the same in both lines. When you get to the audio receiver, one of the noise signals will be inverted and perfectly cancel out the noise in the other line. This setup minimizes noise introduced by EMI. XLR cables are also set up to deliver phantom power, which is require by condensor mics. They also have a nice latch on either end that keeps the cable from falling off.",
+            "links": [
+              {
+                "title": "Lewitt - What is XLR?",
+                "link": "https://www.youtube.com/watch?v=ZaHgyJ8v_jc&ab_channel=LEWITT"
+              },
+              {
+                "title": "Beginner’s guide to connecting audio cables (XLR, TRS, Hi-Z)",
+                "link": "https://www.youtube.com/watch?v=DSjeLsPj-Lc&ab_channel=PeteJohns-StudioLiveToday"
               }
             ]
         },

@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import Definition from './Definition';
 import getVocabSection from './VocabHelper'; // function used to generate Vocab section
+import {NavLink} from 'react-router-dom';
 const DATA_MUSIC_PROD = require('./DATA_MUSIC_PROD.json');
+
 
 
 class MusicProd extends Component {
@@ -107,6 +109,7 @@ class MusicProd extends Component {
                   <li>
                     <h4>Some Mixing Links</h4>
                     <ul>
+                      <li><a href="https://www.youtube.com/watch?v=Mx7AnMUCDic&list=PLkYsB0Ki9lAdIaYCpB0B0uVTZMZBt9NdX&ab_channel=FLSTUDIObyImage-LineSoftware">Image-Line FL Studio - Mixing Playlist</a></li>
                       <li><a href="https://www.youtube.com/watch?v=l3MfluPFbzM&t=1234s&ab_channel=wickiemedia">Wikiemedia - Mix Like a Pro - 12 Track Song</a></li>
                       <li><a href="https://www.youtube.com/watch?v=YEorsfZe4vU&list=RDCMUCchjpg1aaY91WubqAYRcNsg&start_radio=1&rv=YEorsfZe4vU&t=1&ab_channel=wickiemedia">Wikiemedia - Basic Mixing Theory #1</a></li>
                       <li><a href="https://www.youtube.com/watch?v=JPp3i_0xlCk&t=687s&ab_channel=Severman">Severman - How To Mix & Master EDM Like A Pro</a></li>
@@ -127,6 +130,18 @@ class MusicProd extends Component {
                 <ul>
                   <li><a href="https://soundcamp.org/">SoundCamp (Better to search on google with keyword of sample)</a></li>
                 </ul>
+              </li>
+
+              <li>
+                <h3>Drum Buss Flow</h3>
+                <ol>
+                  <li>
+
+                  </li>
+                  <li>
+
+                  </li>
+                </ol>
               </li>
             </ul>
           </div>

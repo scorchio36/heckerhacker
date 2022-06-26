@@ -11,19 +11,67 @@ in as a prop by App component. */
 class SideMenu extends Component {
 
   render() {
-    return (
-      <div className="sidemenu" style={{left: this.props.menuOffset}}>
-        <ul>
-          <NavLink to="/centrifugal_pumps" onClick={this.props.hamburgercallback}><li>Centrifugal Pumps</li></NavLink>
-          <NavLink to="/data_science" onClick={this.props.hamburgercallback}><li>Data Science</li></NavLink>
-          <NavLink to="/fundamental_analysis" onClick={this.props.hamburgercallback}><li>Fundamental Analysis</li></NavLink>
-          <NavLink to="/music_production" onClick={this.props.hamburgercallback}><li>Electronic Music Production</li></NavLink>
-          <NavLink to="/neurology" onClick={this.props.hamburgercallback}><li>Neurology</li></NavLink>
-          <NavLink to="/robotics" onClick={this.props.hamburgercallback}><li>Robotics</li></NavLink>
-          <NavLink to="/tools/physics/kinematics/projectile_motion_sim" onClick={this.props.hamburgercallback}><li>Projectile Motion Sim</li></NavLink>
-        </ul>
-      </div>
-    );
+
+    if(this.props.menuCategory == "Resource Pages") {
+      return (
+        <div className="sidemenu" style={{left: this.props.menuOffset}}>
+
+          <ul>
+            <div className="menu-cat-buttons"><button onClick={this.props.updateMenuLeft}>«</button>{this.props.menuCategory}<button onClick={this.props.updateMenuRight}>»</button></div>
+            <NavLink to="/centrifugal_pumps" onClick={this.props.hamburgercallback}><li>Centrifugal Pumps</li></NavLink>
+            <NavLink to="/data_science" onClick={this.props.hamburgercallback}><li>Data Science</li></NavLink>
+            <NavLink to="/fundamental_analysis" onClick={this.props.hamburgercallback}><li>Fundamental Analysis</li></NavLink>
+            <NavLink to="/music_production" onClick={this.props.hamburgercallback}><li>Music Production</li></NavLink>
+            <NavLink to="/neurology" onClick={this.props.hamburgercallback}><li>Neurology</li></NavLink>
+            <NavLink to="/robotics" onClick={this.props.hamburgercallback}><li>Robotics</li></NavLink>
+          </ul>
+        </div>
+      );
+    }
+    else if(this.props.menuCategory == "Articles") {
+      return (
+        <div className="sidemenu" style={{left: this.props.menuOffset}}>
+
+          <ul>
+            <div className="menu-cat-buttons"><button onClick={this.props.updateMenuLeft}>«</button>{this.props.menuCategory}<button onClick={this.props.updateMenuRight}>»</button></div>
+            <NavLink to="/articles/music_production"><li>Music Production</li></NavLink>
+          </ul>
+        </div>
+      );
+    }
+    else if(this.props.menuCategory == "Projects") {
+      return (
+        <div className="sidemenu" style={{left: this.props.menuOffset}}>
+
+          <ul>
+          <div className="menu-cat-buttons"><button onClick={this.props.updateMenuLeft}>«</button>{this.props.menuCategory}<button onClick={this.props.updateMenuRight}>»</button></div>
+            <p> No Projects Available. </p>
+          </ul>
+        </div>
+      );
+    }
+    else if(this.props.menuCategory == "Tools") {
+      return (
+        <div className="sidemenu" style={{left: this.props.menuOffset}}>
+
+          <ul>
+            <div className="menu-cat-buttons"><button onClick={this.props.updateMenuLeft}>«</button>{this.props.menuCategory}<button onClick={this.props.updateMenuRight}>»</button></div>
+            <NavLink to="/tools/physics/kinematics/projectile_motion_sim" onClick={this.props.hamburgercallback}><li>Projectile Motion Sim</li></NavLink>
+          </ul>
+        </div>
+      );
+    }
+    else {
+      return (
+        <div className="sidemenu" style={{left: this.props.menuOffset}}>
+
+          <ul>
+            <div className="menu-cat-buttons"><button onClick={this.props.updateMenuLeft}>«</button>{this.props.menuCategory}<button onClick={this.props.updateMenuRight}>»</button></div>
+            <p>ERROR</p>
+          </ul>
+        </div>
+      );
+    }
   }
 }
 

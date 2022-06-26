@@ -18,7 +18,10 @@ import Neurology from './info/Neurology';
 import FundamentalAnalysis from './info/FundamentalAnalysis';
 import Robotics from './info/Robotics';
 import Home from './Home';
-import ProjectileMotionSimContainer from './tools/physics/kinematics/ProjectileMotionSimContainer'
+import Articles from './articles/Articles.js';
+import ProjectileMotionSimContainer from './tools/physics/kinematics/ProjectileMotionSimContainer';
+import MusicProductionArticles from './articles/music_production/MusicProductionArticles.js';
+import Mixing from './articles/music_production/Mixing.js'
 const SIDEMENU_OFFSCREEN_OFFSET = "-290px"; // How many pixels until the sidemenu is completely off-screen (may need to be adjusted for different devices)
 
 /* Main container for the whole application. All components in my project will be children of App
@@ -32,10 +35,14 @@ class App extends Component {
     // State keeps track of whether sidemenu is visible on mobile.
     this.state = {
       menuVisible: false,
-      menuOffset: SIDEMENU_OFFSCREEN_OFFSET
+      menuOffset: SIDEMENU_OFFSCREEN_OFFSET,
+      menuOptions: ["Resource Pages", "Articles", "Projects", "Tools"],
+      currentMenuIndex: 0
     };
 
     this.toggleMenuVisibility = this.toggleMenuVisibility.bind(this);
+    this.updateMenuLeft = this.updateMenuLeft.bind(this);
+    this.updateMenuRight = this.updateMenuRight.bind(this);
   }
 
   render() {
@@ -44,7 +51,7 @@ class App extends Component {
         <HashRouter>
           <Header hamburgercallback={this.toggleMenuVisibility}/>
           <div className="main-content">
-            <SideMenu menuOffset={this.state.menuOffset} hamburgercallback={this.toggleMenuVisibility}/>
+            <SideMenu menuOffset={this.state.menuOffset} hamburgercallback={this.toggleMenuVisibility} updateMenuLeft={this.updateMenuLeft} updateMenuRight={this.updateMenuRight} menuCategory={this.state.menuOptions[this.state.currentMenuIndex]}/>
             <div className="content">
               <Route exact path="/" component={ Home } />
               <Route path="/centrifugal_pumps" component={ CentrifugalPumps } />
@@ -55,6 +62,9 @@ class App extends Component {
               <Route path="/tools/physics/kinematics/projectile_motion_sim" component={ProjectileMotionSimContainer} />
               <Route path="/quantum_mechanics" component={ QuantMech } />
               <Route path="/robotics" component={Robotics} />
+              <Route path="/articles" component={Articles} />
+              <Route path="/articles/music_production" component={MusicProductionArticles} />
+              <Route path="/articles/music_production/mixing" component={Mixing} />
             </div>
           </div>
         </HashRouter>
@@ -77,6 +87,37 @@ class App extends Component {
         menuOffset: "0px"
       });
     }
+  }
+
+  updateMenuLeft() {
+
+
+    let newIndex = this.state.currentMenuIndex;
+    newIndex--;
+    console.log(newIndex);
+    if(newIndex < 0) {
+      newIndex = this.state.menuOptions.length-1;
+    }
+
+    this.setState({
+      ...this.state,
+      currentMenuIndex: newIndex
+    });
+  }
+
+  updateMenuRight() {
+
+    let newIndex = this.state.currentMenuIndex;
+    newIndex++;
+    console.log(newIndex);
+    if(newIndex > (this.state.menuOptions.length-1)) {
+      newIndex = 0;
+    }
+
+    this.setState({
+      ...this.state,
+      currentMenuIndex: newIndex
+    });
   }
 }
 

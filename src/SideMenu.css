@@ -30,6 +30,22 @@
   background-color: #FAA;
 }
 
+.sidemenu button {
+
+  padding: 5px;
+  font-size: 30px;
+  margin:10px;
+}
+.menu-cat-buttons {
+
+  width: 200px;
+  margin: 15px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 15px;
+  font-style: oblique;
+  font-weight: bolder;
+}
 /* Sidemenu will not initially be visible on mobile. Hamburger icon will need to
 be clicked in order to reveal the menu. This is done with absolute positioning. A
 transition is used to make the sidemenu pop in and out smoothly. */
