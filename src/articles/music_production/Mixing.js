@@ -12,7 +12,7 @@ class Mixing extends Component {
 
       <div>
         <h1>My Steps for Mixing</h1>
-        <img src="https://media.istockphoto.com/photos/studio-mixing-panelsound-mixer-audio-mixer-slide-music-equipment-picture-id1066309740?k=20&m=1066309740&s=612x612&w=0&h=qUgyvt4esrI0lVRCkzyf9xyWg7aI5DVrm6rCUfwuRWo=" />
+        <img src="https://www.practical-music-production.com/wp-content/uploads/2019/03/mixing-board-feature.jpg" width="1000vw" height="500px"/>
         <p> A musical production of any kind is a collection of various sounds and effects that are overlayed in complex ways. All of these components within
             a production need to be organized and managed properly so that they all fit together and sound nice once they hit the speakers. The process of
             controlling the levels, timing, spectrum, and stereolocation of all of these elements so that they fit together cohesively and sound nice to your
@@ -43,7 +43,22 @@ class Mixing extends Component {
           quick reference, but please feel free to read through it and take whatever you find useful.
         </p>
 
-        <h2> Step 1: Balance </h2>
+        <h2> Step 1: Balance </h2><img src="https://media.istockphoto.com/photos/surreal-image-of-an-elephant-balancing-on-a-beach-ball-picture-id858259828?k=20&m=858259828&s=612x612&w=0&h=BoMiXsV5q4KdVxi1T1nYFVCjqBbTRt1xAj7zSyKyXYY="/>
+
+        <p>
+          Before you start mixing, make sure you've gone through and done your best to gain stage. Put your tracks in that 'analog sweet spot' so they can sound
+          as good as possible as they go into their respective effects chains. Check out <a href="https://www.youtube.com/watch?v=Tq5lDHCKt84&ab_channel=MusicianonaMission">this video</a> for more information.
+
+        </p>
+        <p>
+          Balance refers to using the faders on your mixing panel to adjust the sound levels of your tracks. You need to consider how loud each of your sounds are
+          with respect to your allowed decibel ceiling as well as how loud they are with respect to each other. The computer is not capable of producing sounds
+          louder than 0dBFS, so that's definitely a level you should consider. Beyond this level your tracks will begin to clip. A lot of the time clipping will
+          just introduce gross distortion into your sound, but there are cases where you can use distortion artistically.
+        </p>
+        <p>
+          Additionally, a lot of people will mix to a lower dBFS level than 0 so they have headroom going into mastering. I will mix to around -6dBFS.
+        </p>
         <div>
         <ol>
           <li>
