@@ -25,6 +25,25 @@
             }
           ]
       },
+      "cent": {
+          "word": "Cent",
+          "definition": "A cent is 1/100th of a semitone. Whenever you're changing pitches or detuning something you will often have the choice to change the pitch by semitones or by cents. Cents will allow you to have a much finer control over how the pitch changes because it takes a change of 100 cents to equate a change of 1 semitone.",
+          "links": []
+      },
+      "chorus": {
+          "word": "Chorus",
+          "definition": "An effect that delays the incoming sound, detunes it a bit, and then uses an LFO to modulate another delay that is added to the delayed sound. This leads to something that can sound like multiple instruments all playing at once, sort of like a choir. The main parameters to focus on for this plugin are the delay, frequency, and depth. The delay parameter decides how far in time (milliseconds) the delayed sound will be from the original sound. An LFO then takes the delayed signal and adds ANOTHER delay. Except this second delay is not constant and is actually modulated by the LFO. The LFO vibrates the delayed copy of the sound back and forth and the vibrations are centered around where the delay parameter is set. The depth parameter controls how far the delayed signal will vary around the set delay parameter. Essentially, the delayed signal will vibrate back and forth from (Delay+Depth) to (Delay-Depth) in time. How quickly it moves back and forth is set by the last parameter, the frequency.",
+          "links": [
+            {
+              "title": "Roland Media - EFFECTS 101: Chorus",
+              "link": "https://www.youtube.com/watch?v=zmN7fK3fKUE&ab_channel=rolandmedia"
+            },
+            {
+              "title": "Transverse Audio - How To Use A Chorus Effect",
+              "link": "https://transverseaudio.com/posts/how-to-use-a-chorus-effect"
+            }
+          ]
+      },
       "compressor": {
           "word": "Compressor",
           "definition": "Compressors are tools that control the dynamics of a sound or mix. The main reason you use them is to squash down transients so you have more control over your audio levels. Sounds can be unruly and inconsistent. For a lot of audio sources, like vocals, there is a large disparity between the loudest and quietest sounds that a singer produces (the difference in dB between the loudest and quietest levels in a mix is called the Dynamic Range). This can lead to an inconsistent feeling from a mix or sound. It also causes a problem of balancing. The quiet sounds may be too hard to hear, but turning up the whole track can make your loudest sounds clip. The compressor is a good tool for this. It has two main controls that can be adjusted: the threshold and the ratio. The threshold is set at a certain dB level. If any portion of a sound goes above this dB level, then the compressor will kick in and attenuate the portion of the sound that exceeds the threshold. But how do you control how much the sound gets attenuated? Through the ratio parameter. The ratio is an X:1 ratio where X determines how many decibels of attenuation a signal experiences per dB of signal that crosses the threshold. For example, if my ratio is 4:1 and my threshold is -14dB, every 4dB that crosses the -14dB threshold is squashed down to 1dB. If I have a -10dB signal pumping through this compressor, it will be squashed down to -13dB. A -6dB signal would be attenuated to -12dB. There are two other parameters that are worth mentioning. The attack and release levels. These are set in milliseconds. They are used to tell the compressor how much time it should wait before kicking in or cutting out. When a signal crosses the threshold parameter, the attack is the amount of time the compressor should wait before it starts attenuating the signal. When a signal drops back below the threshold level, the release is the amount of time the compressor should keep attenuating the signal before it shuts off again. Compressors are used for dynamic control, but they are also appreciated for the tonal value that they can add to a sound. Each compressor has an intrinsic effect that it applies to a sound through signal processing. Most processors/VSTs do. The effect is different for every compressor. But you can also affect the tone of an incoming signal by adjusting any of the 4 parameters mentioned earlier. The compressors main goal is not to change the tonal value of your signal, so these sound changes are subtle. They can change the punch of a sound, make a sound more thick or thin. They can be applied to a whole bus or mix to 'glue' sounds together.",
@@ -91,6 +110,16 @@
             }
           ]
       },
+      "dessing": {
+          "word": "De-Essing",
+          "definition": "When recording vocals you will encounter high frequency spikes caused by sounds like 's' and 'f'. De-essing is the process of attenuating those 's'-like sounds so that they are not adding gross artifacts and ruining your mix. You will typically spot these around 6KHz and higher. Make sure these sounds are only being attenuated. Removing them entirely can make your vocals sound off.",
+          "links": [
+            {
+              "title": "FL Studio Vocal Mixing - How To De-ess Vocals",
+              "link": "https://www.youtube.com/watch?v=Nk_DKEJ5XHA&t=179s&ab_channel=InTheMix"
+            }
+          ]
+      },
       "digitalsweetspot": {
           "word": "Digital Sweet Spot",
           "definition": "Digital VST instruments and plugins today are generally modeled after analog instrumentation from the 'olden days' of music. There was typically a spot, at 0VU, that was known as the analog sweet spot. That is where you wanted your signals to be for processing so they would sound best. This is still the case for digital instruments, since most of them are modeled after the analog ones. Processing is most effective if you have your signal levels at 0VU, which is around -18dbFS. Getting your input sounds into this digital sweet spot before processing usually falls under the concept of 'gain staging'. You can use a VU meter and change the gain of the loudest part of a track until it, on average, hovers around 0VU. This is easier for sustained notes. For more dynamic notes, you should be more concerned with the peak. Get as close as you can to 0VU without compromising the amount of headroom you want to ultimately leave in your track.",
@@ -105,20 +134,6 @@
             }
           ]
       },
-      "dynamicmic": {
-          "word": "Dynamic Microphone",
-          "definition": "Dynamic microphones are robust mics that are better for recording louder sounds and live performances. The microphone has a diaphragm connected to a coil of wire. The pressure generated by sound waves moves the diaphragm and thereby the wire up and down. The coil is centered around a permanent magnet that generates a voltage within the coil of wire based on how quickly and loudly the diaphragm is displaced. These mics are considered 'heavy', so it takes a lot of energy to move that diaphragm up and down. That's typically why they are used for louder recordings.",
-          "links": [
-            {
-              "title": "Audio Recording Tutorial - Comparing microphone types",
-              "link": "https://www.youtube.com/watch?v=2edewYkE_f0&ab_channel=LinkedInLearning"
-            },
-            {
-              "title": "Roswell Pro Audio - How Dynamic Mics Work",
-              "link": "https://www.youtube.com/watch?v=PFgUoGJ7YbA&ab_channel=RoswellProAudio"
-            }
-          ]
-      },
       "ducking": {
           "word": "Ducking",
           "definition": "When you duck a sound out of your music, you soften or completely zero the amplitude of that sound for a certain period of time. This is typically done to allow for another sound to cut through your mix. A good example of this is the kick and bass within a mix. A kick is a short burst of sound that typically has a lot of energy in the lower part of the spectrum (sub-bass, bass, low-mids). Let's imagine that we have a sustained bass note throughout the mix, which also has a lot of energy in the sub-bass and bass portions of the spectrum. The frequency content of the kick and the bass will clearly overlap and mess with each other. This can cause clarity and phase problems as the two sounds constructively and destructively interfere. You will have a lot of issues hearing your kick through the bass and the track will sound muddy. A good fix for this is to 'duck' out the bass everytime the kick hits. This will allow your kick to cut through the bass and make it much easier to hear. You can duck out the bass in a subtle way - just enough for that kick to cut through. Or you can duck out the bass by a lot and introduce a pumping effect into your mix. The example given is typically done through side chaining, but can also be done with an LFO. See 'sidechaining' in the vocab section and LFO vs Compressors in the notes section.",
@@ -130,6 +145,20 @@
             {
               "title": "LMMS Forum: Using a Peak Controller for Ducking/Sidechaining",
               "link": "https://lmms.io/forum/viewtopic.php?t=1181"
+            }
+          ]
+      },
+      "dynamicmic": {
+          "word": "Dynamic Microphone",
+          "definition": "Dynamic microphones are robust mics that are better for recording louder sounds and live performances. The microphone has a diaphragm connected to a coil of wire. The pressure generated by sound waves moves the diaphragm and thereby the wire up and down. The coil is centered around a permanent magnet that generates a voltage within the coil of wire based on how quickly and loudly the diaphragm is displaced. These mics are considered 'heavy', so it takes a lot of energy to move that diaphragm up and down. That's typically why they are used for louder recordings.",
+          "links": [
+            {
+              "title": "Audio Recording Tutorial - Comparing microphone types",
+              "link": "https://www.youtube.com/watch?v=2edewYkE_f0&ab_channel=LinkedInLearning"
+            },
+            {
+              "title": "Roswell Pro Audio - How Dynamic Mics Work",
+              "link": "https://www.youtube.com/watch?v=PFgUoGJ7YbA&ab_channel=RoswellProAudio"
             }
           ]
       },
@@ -148,6 +177,29 @@
             {
               "title": "The Ultimate EQ Cheat Sheet for Every Common Instrument",
               "link": "https://blog.sonicbids.com/the-ultimate-eq-cheat-sheet-for-every-common-instrument"
+            }
+          ]
+      },
+
+      "flanger": {
+          "word": "Flanger",
+          "definition": "The flanger is an effect that operates in a similar fashion to the chorus effect, but it creates more of a noisy sweeping sound. Like the chorus effect, it operates by playing a delayed, modulated version of the incoming signal with the original incoming signal. It also has many of the same parameters like delay, depth, and frequency that control the same things that those parameters controlled in the chorus effect. There are a few differences between flangers and choruses, however. Typically, choruses will have a longer delay setting while flangers have much shorter settings for the delay parameter. Flangers also only make a single delayed copy of the incoming signal, while choruses will typically make 2 or more delayed copies and play them with the original signal. Finally, flangers actually operate with a feedback loop. They have a comb filter structure that feeds back the delayed signal into the original one, causing constructive/destructive interference and harmonic cancelations. Most flangers will give you a feedback or resonance knob to control how much feedback you want in the comb filter. Ultimately, this knob just gives you another degree of freedom within the plugin to make a cool and unique sound. Messing around with the feedback will control how much 'whistling' there is in your sound and how high or low your flanger sweeps will go in pitch.",
+          "links": [
+            {
+              "title": "Wikipedia - Flanging",
+              "link": "https://en.wikipedia.org/wiki/Flanging"
+            },
+            {
+              "title": "Wikipedia - Comb Filter",
+              "link": "https://en.wikipedia.org/wiki/Comb_filter"
+            },
+            {
+              "title": "Wikipedia - Comb Filter",
+              "link": "https://en.wikipedia.org/wiki/Comb_filter"
+            },
+            {
+              "title": "Roland Media - EFFECTS 101: Flanger",
+              "link": "https://www.youtube.com/watch?v=NAqQvs_WXs8&list=PL081D4BE59AE08F99&index=7&ab_channel=rolandmedia"
             }
           ]
       },
@@ -314,6 +366,25 @@
               "links": []
         },
 
+        "phaser": {
+              "word": "Phaser",
+              "definition": "Phasers are very similar to flangers as they are setup in a feedback loop. A copy of the signal goes through some processing and then is fed back into the original signal. The difference between the phaser and the flanger is what processing the copy of the signal goes through. In a flanger, the signal will go through a delay line. This delay line is then modulated by an LFO. A phaser, on the other hand, processes its copy of the signal with an all-pass filter. The all pass filter will allow the amplitudes of the copied sound through with no change, but the phase of the copied sound will be affected. The phaser will 'woosh' and 'sweep' like a flanger does, but it has a different characteristic sound to it. The main parameters to focus on here are depth, frequency, and feedback. Whereas a flanger will use these parameters to modulate a delay, the phaser uses these parameters to modulate the phase of the copied signal. The feedback is used in a similar manner to the feedback in the flanger. It will determine how much of your copied signal get's mixed back into the original, but ultimately it's another degree of freedom within the plugin to create a cool and unique sound.",
+              "links": [
+                {
+                  "title": "My New Microphone - Complete Guide To The Phaser Audio Modulation Effect",
+                  "link": "https://mynewmicrophone.com/complete-guide-to-the-phaser-audio-modulation-effect/"
+                },
+                {
+                  "title": "Wikipedia - Phaser",
+                  "link": "https://en.wikipedia.org/wiki/Phaser_(effect)"
+                },
+                {
+                  "title": "EFFECTS 101: Phaser",
+                  "link": "https://www.youtube.com/watch?v=0T_L4qYRi7s&t=32s&ab_channel=rolandmedia"
+                }
+              ]
+        },
+
         "pitchbending": {
               "word": "Pitch Bending",
               "definition": "Using automation to slide the pitch of a note or sample to a different pitch. This creates a really cool effect in EDM. Different DAWs have different names for this. This is 'note sliding' in FL Studio.",
@@ -354,6 +425,10 @@
             {
               "title": "FL STUDIO | Mixing Basics - Reverbs",
               "link": "https://www.youtube.com/watch?v=hFRwk1LOdBU&list=PLkYsB0Ki9lAdIaYCpB0B0uVTZMZBt9NdX&index=6&ab_channel=FLSTUDIObyImage-LineSoftware"
+            },
+            {
+              "title": "Roland Media - EFFECTS 101: Reverb",
+              "link": "https://www.youtube.com/watch?v=TZG2K0J_A3c&list=PL081D4BE59AE08F99&index=3&ab_channel=rolandmedia"
             }
           ]
         },

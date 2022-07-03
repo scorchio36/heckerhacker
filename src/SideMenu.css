@@ -46,6 +46,7 @@
   font-style: oblique;
   font-weight: bolder;
 }
+
 /* Sidemenu will not initially be visible on mobile. Hamburger icon will need to
 be clicked in order to reveal the menu. This is done with absolute positioning. A
 transition is used to make the sidemenu pop in and out smoothly. */
